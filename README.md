@@ -1,0 +1,1 @@
+Hello! This is just a fun side project that I'm working on. Once this is done, it will be a personal website (as the name would suggest).
