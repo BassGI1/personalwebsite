@@ -7,11 +7,11 @@ export default [
         link: "https://bassamsnotesapp.netlify.app/"
     },
     {
-        title: "Apples to Apples",
-        src: "applestoapples",
+        title: "Apples to Oranges",
+        src: "applestooranges",
         codedin: ["https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
         description: "This was definitely my most ambitious web app yet, but it turned out great! I tried to make as many animations as possible, so the game looks and feels more aesthetically pleasing. It's fully functional, and (in my opinion) a little bit addictive, so be careful! Can you beat my personal record of 274?",
-        link: "https://applestoapples.netlify.app/"
+        link: "https://applestooranges.netlify.app/"
     },
     {
         title: "Personal Website",
