@@ -15,13 +15,13 @@ export default function CourseEvals(props) {
 
         <div style={{color: props.dark ? "white" : "#282D35", backgroundColor : props.dark ? "#282D35" : "white"}} className="completepage">
 
-            {term == '' && <h2 style={{color: color}} className="evalstitle">This is just an archive of my opinions on the compulsory courses that the University of Waterloo is making us take.</h2>}
+            {term === '' && <h2 style={{color: color}} className="evalstitle">This is just an archive of my opinions on the terms I've had during my time at the University of Waterloo.</h2>}
 
-            {term == '' && terms.map(x => <Box dark={props.dark} id={x} setTerm={setTerm} key={x}/>)}
+            {term === '' && terms.map(x => <Box dark={props.dark} id={x} setTerm={setTerm} key={x}/>)}
 
-            {term != '' && <Courses back={setTerm} id={term} />}
+            {term !== '' && <Courses back={setTerm} id={term} />}
 
-            {term == '' && terms.length < 14 && <h2 className="soon">...Coming Soon</h2>}
+            {term === '' && terms.length < 14 && <h2 className="soon">...Coming Soon</h2>}
 
         </div>
 

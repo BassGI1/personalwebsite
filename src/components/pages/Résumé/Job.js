@@ -9,6 +9,7 @@ export default function Job(props) {
             <h2>{props.company}</h2>
             <h3>{props.title}</h3>
             <h4>{props.start} - {props.end}</h4>
+            <br/>
             <ul>
                 {props.description.map(x => <li key={x}>• {x}</li>)}
             </ul>

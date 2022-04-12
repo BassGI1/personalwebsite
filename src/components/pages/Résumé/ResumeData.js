@@ -11,7 +11,7 @@ export default [
         "Excellent time management; developed through years of school and extracurriculars",
         "Quick-witted; developed through many different fast-paced jobs i.e Kitchen Worker, Pharmacist’s Assistant",
         "Pays close attention to details; developed through work as Pharmacist’s Assistant (no room for error)",
-        "Working knowledge of C, C++, React.js, ReactNative.js, JavaScript, PHP, HTML, and CSS technologies",
+        "Working knowledge of C, C++, React.js, ReactNative.js, JavaScript, TypeScript, PHP, HTML, and CSS technologies",
         "Can thrive individually and in teams",
         "Fluent in Arabic, intermediate speaker in French"
     ]},
@@ -22,9 +22,11 @@ export default [
         start: 'January 2022',
         end: 'April 2022',
         description: [
-            'Used various technologies, including Javascript, HTML, CSS, and PHP to develop new features and maintain the ecommerce website',
+            'Used various technologies, including Javascript, HTML, CSS, and PHP to develop/maintain features on the ecommerce website',
+            "Ensured that the online ecommerce website and the mobile app were updated and streamlined",
             "Used React.js and ReactNative.js in order to integrate Yelp API's into a brand new mobile application",
-            "Ensured that the online ecommerce website and the mobile app were updated and streamlined"
+            "Integrated a payment method in the aforementioned application using the Stripe API",
+            "Assisted in the deployment of a new mobile application on the App Store and the Google Play Store"
         ]
     },
     {

@@ -10,7 +10,7 @@ import AboutMe from "./components/pages/AboutMe/AboutMe.js";
 export default function App() {
 
     const [dark, setDark] = useState(() => true)
-    const pages = ['Home', 'Resume', 'Projects', 'About Me', 'Course Evaluations']
+    const pages = ['Home', 'Resume', 'Projects', 'About Me', 'University Experience']
     const [page, setPage] = useState('Home')
 
     //dark is used to determine whether the page should be rendered in dark mode or not
@@ -27,17 +27,17 @@ export default function App() {
 
             <Navbar toggleDark={toggleDark} dark={dark} pages={pages} page={page} change={setPage}/>
 
-            {page == 'Course Evaluations' && <CourseEvals dark={dark}/>}
+            {page === 'University Experience' && <CourseEvals dark={dark}/>}
 
-            {page == 'Home' && <Home dark={dark} setPage={setPage}/>}
+            {page === 'Home' && <Home dark={dark} setPage={setPage}/>}
 
-            {page == 'Vids' && <Videos dark={dark} />}
+            {page === 'Vids' && <Videos dark={dark} />}
 
-            {page == 'Resume' && <Resume dark={dark} />}
+            {page === 'Resume' && <Resume dark={dark} />}
 
-            {page == 'Projects' && <Projects dark={dark} />}
+            {page === 'Projects' && <Projects dark={dark} />}
 
-            {page == 'About Me' && <AboutMe dark={dark} />}
+            {page === 'About Me' && <AboutMe dark={dark} />}
 
         </div>
 
