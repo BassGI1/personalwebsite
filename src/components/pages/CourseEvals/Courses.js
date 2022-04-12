@@ -59,7 +59,7 @@ export default function Courses(props) {
 
                     <hr/>
 
-                    <h4 style={{marginTop: "3vh", marginLeft: "2vw"}}>{`Rating: ${x.rating*100}/100`}</h4>
+                    <h4 style={{marginTop: "3vh", marginLeft: "2vw"}}>{`Rating: ${x.rating*10}/10`}</h4>
 
                     <h4 style={{marginTop: "1.5vh", marginLeft: "2vw"}}>{`Title: ${x.title}`}</h4>
 

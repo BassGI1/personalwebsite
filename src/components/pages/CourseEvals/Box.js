@@ -1,5 +1,4 @@
 import React from "react";
-import Data from './CourseEvalsData.js'
 
 export default function Box(props) {
 

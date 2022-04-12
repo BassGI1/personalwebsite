@@ -86,7 +86,8 @@ const Data = [
                 description: "Was used to build the backend of the app"
             }
         ]
-    ]
+    ],
+    ["1B", "Coming Soon..."]
 ]
 
 export default Data

@@ -9,7 +9,7 @@ export default function CourseEvals(props) {
     const [term, setTerm] = useState('')
 
     let color = props.dark ? "white" : "#21222A"
-    let terms = ['1A', 'Co-op 1']
+    let terms = ['1A', 'Co-op 1', '1B']
 
     return(
 
