@@ -1,5 +1,4 @@
 import React from "react";
-import Data from "./ResumeData.js"
 import Sidebar from "./Sidebar.js";
 import Employment from "./Employment.js";
 

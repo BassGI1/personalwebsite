@@ -15,7 +15,7 @@ export default function CourseEvals(props) {
 
         <div style={{color: props.dark ? "white" : "#282D35", backgroundColor : props.dark ? "#282D35" : "white"}} className="completepage">
 
-            {term === '' && <h2 style={{color: color}} className="evalstitle">This is just an archive of my opinions on the terms I've had during my time at the University of Waterloo.</h2>}
+            {term === '' && <h2 style={{color: color}} className="evalstitle">This is just an archive of the experiences that I've had during my time at the University of Waterloo.</h2>}
 
             {term === '' && terms.map(x => <Box dark={props.dark} id={x} setTerm={setTerm} key={x}/>)}
 

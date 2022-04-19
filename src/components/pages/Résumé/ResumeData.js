@@ -1,4 +1,4 @@
-export default [
+const Data = [
     {
         type: 'not',
         info: {
@@ -8,12 +8,14 @@ export default [
             phone: "519-501-9140"
         },
         qualifications: [
-        "Excellent time management; developed through years of school and extracurriculars",
-        "Quick-witted; developed through many different fast-paced jobs i.e Kitchen Worker, Pharmacist’s Assistant",
-        "Pays close attention to details; developed through work as Pharmacist’s Assistant (no room for error)",
-        "Working knowledge of C, C++, React.js, ReactNative.js, JavaScript, TypeScript, PHP, HTML, and CSS technologies",
-        "Can thrive individually and in teams",
-        "Fluent in Arabic, intermediate speaker in French"
+            "Working knowledge of C, C++, React.js, ReactNative.js, JavaScript, TypeScript, PHP, HTML, and CSS technologies - always willing to learn more",
+            "Excellent time management - ability to thrive individually and in teams",
+            "Excellent critical thinking",
+            "Excellent work-ethic - developed through years of academics and jobs",
+            "Detail-attentive - helpful for debugging",
+            "Adaptability - have used various technologies in different work environments",
+            "Punctuality - capable of meeting deadlines",
+            "Fluent in Arabic, intermediate speaker in French"
     ]},
     {
         type: "job",
@@ -90,3 +92,5 @@ export default [
         ],
     }
 ]
+
+export default Data
