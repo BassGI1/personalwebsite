@@ -16,7 +16,7 @@ export default function Sidebar() {
                 <h5 className="ressideelem">{`${info.term} Computer Engineering at the University of Waterloo`}</h5>
                 <h5 className="ressideelem" style={{marginTop: "-1vh"}}>{info.email}<span style={{marginLeft: "2vh"}}>{info.phone}</span><span style={{marginLeft: "2vh"}}>{"ID: " + info.id}</span></h5>
                 <h3 className="ressideelem" style={{marginTop: "-1vh"}}>Working knowledge of the following technologies:</h3>
-                <div style={{height: "25vh", display: "flex", flexWrap: "wrap", marginBottom: "-3vh", marginBottom: "0vh", width: "100%"}}>
+                <div style={{height: "25vh", display: "flex", flexWrap: "wrap", marginBottom: "0vh", width: "100%"}}>
                     {techs.map(x => <img src={x} alt="Language Logo" style={{height: "9vh", marginLeft: "2vw", maxWidth: "8vw"}} key={x}/>)}
                 </div>
                 <ul style={{marginLeft: "2vw", marginRight: "2vw"}}>

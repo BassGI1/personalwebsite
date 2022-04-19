@@ -1,4 +1,4 @@
-export default [
+const Data = [
     {
         title: "Notes Application",
         src: "notes",
@@ -63,3 +63,5 @@ export default [
         link: "https://website-for-a-pizza.netlify.app/"
     }
 ]
+
+export default Data

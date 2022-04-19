@@ -6,7 +6,7 @@ export default function Employment() {
 
     return (
         <div className="employ">
-            {Data.map(x => x.type == 'job' ? <Job {...x} key={x.company}/> : '')}
+            {Data.map(x => x.type === 'job' ? <Job {...x} key={x.company}/> : '')}
         </div>
     )
 
