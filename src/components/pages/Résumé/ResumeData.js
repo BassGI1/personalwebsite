@@ -15,7 +15,8 @@ const Data = [
             "Detail-attentive - helpful for debugging",
             "Adaptability - have used various technologies in different work environments",
             "Punctuality - capable of meeting deadlines",
-            "Fluent in Arabic, intermediate speaker in French"
+            "Fluent in Arabic, intermediate fluency French",
+            "Strong team-work skills"
     ]},
     {
         type: "job",
@@ -33,7 +34,7 @@ const Data = [
     },
     {
         type: "job",
-        company: "Math and Science Help (MASH) at Sir John A. Macdonald Secondary School",
+        company: "Math and Science Help (MASH) at Laurel Heights Secondary School",
         title: "Tutor",
         start: 'October 2019',
         end: 'June 2021',
@@ -50,9 +51,9 @@ const Data = [
         start: 'July 2019',
         end: 'March 2020',
         description: [
-            'Counted and filled prescriptions, took inventory, delivered prescriptions',
-            "No room for error, required attention to details",
-            "Fast-paced, required focus, quick thinking, and collaboration"
+            'Located and dispensed correct dosage and quantity of  medications and refills with accuracy',
+            "Kept inventory up-to-date by tracking shortages and informing pharmacists of required restocks",
+            "Greeted and provided customer service to incoming pharmacy patients"
         ],
     },
     {
@@ -75,7 +76,7 @@ const Data = [
         end: 'December 2018',
         description: [
             'Worked in a team to ensure proper sanitation',
-            "Ensured that all items were available",
+            "Assisted in team functions as needed, such as inventory updates and restaurant cleanliness",
             "Fast-paced, required focus, quick thinking, and collaboration"
         ],
     },

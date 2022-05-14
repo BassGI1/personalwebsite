@@ -20,7 +20,7 @@ export default function Sidebar() {
                     {techs.map(x => <img src={x} alt="Language Logo" style={{height: "9vh", marginLeft: "2vw", maxWidth: "8vw"}} key={x}/>)}
                 </div>
                 <ul style={{marginLeft: "2vw", marginRight: "2vw"}}>
-                    {quals.map(x => <li key={x}>• {x}</li>)}
+                    {quals.map(x => <li key={x} style={{fontSize: "2vh"}}>• {x}</li>)}
                 </ul>
 
             </div>
