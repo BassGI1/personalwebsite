@@ -87,7 +87,69 @@ const Data = [
             }
         ]
     ],
-    ["1B", "Coming Soon..."]
+    ["1B", "This was my first in-person university term. I did not expect the workload to increase this much just because the term was in-person. Besides the increased workload, I found that the in-person lectures allowed me to absorb the information presented better. Moreover, all of my professors this term were excellent at presenting the content in an engaging manner and I found myself actually enjoying lectures (unbelievable!). All in all, I honestly prefer in-person classes.", 
+    {
+        title: "ECE 192",
+        rating: 0,
+        about: "Engineering Economics and Impact on Society",
+        experience: ""
+    },
+    {
+        title: "ECE 140",
+        rating: 0,
+        about: "Linear Circuits",
+        experience: ""
+    },
+    {
+        title: "ECE 124",
+        rating: 0,
+        about: "Digital Circuits and Systems",
+        experience: ""
+    },
+    {
+        title: "Math 119",
+        rating: 0,
+        about: "Calculus 2",
+        experience: ""
+    },
+    {
+        title: "ECE 108",
+        rating: 0,
+        about: "Discrete Math and Logic 1",
+        experience: ""
+    },
+    {
+        title: "ECE 106",
+        rating: 0,
+        about: "Electricity and Magnetism",
+        experience: ""
+    },
+    {
+        extras:
+
+        <div style={{margin: "0vw 2vw 2vw 2vh", display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center"}}>
+
+            <div style={{textAlign: "center"}}>
+
+                <img src={require('./assets/1B/1A_Schedule.jpg')} alt="1A Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+
+                <h3>Average 1A Term Week</h3>
+
+            </div>
+
+            <h1 style={{fontSize: "100px", marginLeft: "10vw", marginRight: "10vw"}}>➔</h1>
+
+            <div style={{textAlign: "center"}}>
+
+                <img src={require('./assets/1B/1B_Schedule.png')} alt="1B Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+
+                <h3>Average 1B Term Week</h3>
+
+            </div>
+
+        </div>
+    }
+]
 ]
 
 export default Data

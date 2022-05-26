@@ -55,7 +55,7 @@ export default function Courses(props) {
 
             <h3 style={{margin: "auto 2vw 1.5vh 2vw"}}>{info[1]}</h3>
 
-            {info.map(x => typeof x == 'object' ? <div className="course" key={x.title}> 
+            {info.map(x => x.title ? <div className="course" key={x.title}> 
 
                     <hr/>
 
@@ -70,6 +70,8 @@ export default function Courses(props) {
                     <br/>
 
                 </div> : '')}
+
+                {info[info.length - 1].extras}
 
         </div>
 
