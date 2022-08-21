@@ -71,6 +71,8 @@ export default function Courses(props) {
 
                 </div> : '')}
 
+                <hr style={{marginBottom: "5vh"}}/>
+
                 {info[info.length - 1].extras}
 
         </div>
