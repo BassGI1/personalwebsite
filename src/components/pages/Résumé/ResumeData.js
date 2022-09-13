@@ -8,7 +8,7 @@ const Data = [
             phone: "519-501-9140"
         },
         qualifications: [
-            "Working knowledge of C, C++, React.js, ReactNative.js, Python, Django, JavaScript, TypeScript, PHP, HTML, and CSS technologies - always willing to learn more",
+            "Working knowledge of C, C++, React.js, ReactNative.js, Vue.js, Python, Django, JavaScript, TypeScript, PHP, HTML, and CSS technologies - always willing to learn more",
             "Excellent time management - ability to thrive individually and in teams",
             "Excellent critical thinking",
             "Excellent work-ethic - developed through years of academics and jobs",

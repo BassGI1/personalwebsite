@@ -5,6 +5,12 @@ const Data = [
         codedin: ["https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
         description: "This was a super fun project that took me about a day to design and code. It turned out great, just as well as I had hoped it would. It can store and draw from local storage to ensure that any saved notes are not lost.",
         link: "https://bassamsnotesapp.netlify.app/"
+    },    {
+        title: "Pomodoro Timer",
+        src: "pomodoro",
+        codedin: ["https://assets.stickpng.com/images/62a74f85223343fbc2207d05.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
+        description: "This is a super useful project that took about a day and a half to design and code. Essentially, a pomodoro timer is an interval system which maximizes efficiency. I use this project all the time; to code, work, study, etc.",
+        link: "https://bassamspomodoro.netlify.app/"
     },
     {
         title: "Apples to Oranges",
