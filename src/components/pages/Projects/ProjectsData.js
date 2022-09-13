@@ -8,8 +8,8 @@ const Data = [
     },    {
         title: "Pomodoro Timer",
         src: "pomodoro",
-        codedin: ["https://assets.stickpng.com/images/62a74f85223343fbc2207d05.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
-        description: "This is a super useful project that took about a day and a half to design and code. Essentially, a pomodoro timer is an interval system which maximizes efficiency. I use this project all the time; to code, work, study, etc.",
+        codedin: ["https://i.postimg.cc/QMDC7RNf/vue.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
+        description: "This is a super useful project that took about a day and a half to design and code. Essentially, a pomodoro timer is an interval system which maximizes efficiency. I use this project all the time; to code, work, study, etc. If you're wondering why there is a very strange fact on the picture, it's because the rest interval cycles through a list of random facts.",
         link: "https://bassamspomodoro.netlify.app/"
     },
     {
