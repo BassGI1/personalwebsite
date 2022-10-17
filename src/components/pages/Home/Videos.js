@@ -13,7 +13,7 @@ export default function Videos(props) {
         
             {videos.map(x => <Vid term={x.term} src={x.src} dark={props.dark} key={x}/>)}
 
-            {videos.length < 6 && <h2 className="soon" style={{marginTop: "25vh"}}>...Coming Soon</h2>}
+            {/*videos.length < 6 && <h2 className="soon" style={{marginTop: "25vh"}}>...Coming Soon</h2>*/}
         
         </div>
 

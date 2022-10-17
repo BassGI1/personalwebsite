@@ -85,9 +85,9 @@ const Tech = ({term, name, description}) => {
 
     return (
 
-        <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap", width: "25vh", margin: "0vh 2vw"}}>
+        <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap", width: "25vh", margin: "0vh 2vw 2vw 2vw"}}>
             
-            <img src={require(`./assets/${term}/${name}.png`)} style={{height: "25vh"}} alt={name}/>
+            <img src={require(`./assets/${name}.png`)} style={{maxHeight: "25vh"}} alt={name}/>
 
             <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
                 <h2 style={{margin: "2vh 0vh 2vh 0vh"}}>{name}</h2>

@@ -21,7 +21,7 @@ export default function CourseEvals(props) {
 
             {term !== '' && <Courses back={setTerm} id={term} />}
 
-            {term === '' && terms.length < 14 && <h2 className="soon">...Coming Soon</h2>}
+            {/*term === '' && terms.length < 14 && <h2 className="soon">...Coming Soon</h2>*/}
 
         </div>
 

@@ -149,7 +149,55 @@ const Data = [
 
         </div>
     }
-]
+],
+    [ 
+        "Co-op 2",
+        "I learned a lot this term too. For one, I got to work with professional developers and I was able to get a look at production quality code. I was fortunate enough to work with people who were always willing to teach me and answer any questions I might have had.",
+        "grantmatch",
+        "In the beginning of the term, I was given a few menial changes that were my responsibility. These tasks took no more than half an hour at a time, and essentially served as a means to acclimate me to the source code. I was able to finish all of these tasks, and I was finally given my first 'big' project; the LetsGo Dining mobile app! The app allows groups to randomly find a suitable restaurant based on the preferences of each individual. It was incredible to study the logic, and to implement my own. I was responsible for routing the users to the Yelp page of the selected restaurant, as well as integrating a payment method using the Stripe API. Alongside this project, I was still working on maintaining and developing for the ecommerce website at the same time. This project was my first exposure to API's, and I think I was able to adapt very well. By the end of the term, the app was ready for deployment to the Google Play/App stores, and although my time at the company terminated before the app went live, I was still able to assist in the deployment. The app was built using the Expo platform, and a few modules that were used in the app were depreciated. It was my responsibility to update these modules, and I managed to ready the app for deployment.",
+        [
+            {
+                name: "Python",
+                description: "Was used for building the backend of the website"
+            },
+            {
+                name: "Django",
+                description: "Was used for building the front and backends of the website"
+            },
+            {
+                name: "Docker",
+                description: "Was used for containerizing web application"
+            },
+            {
+                name: "Celery",
+                description: "Was used for scheduling and running automatic background tasks"
+            },
+            {
+                name: "PostgreSQL",
+                description: "Was used as the designated database system"
+            },
+            {
+                name: "JavaScript",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "HTML",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "CSS",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "PHP",
+                description: "Migrating production code to Python from PHP was done"
+            },
+            {
+                name: "Git",
+                description: "Was used for versioning and to ensure that multiple people could work at once without conflicts"
+            },
+        ]
+    ]
 ]
 
 export default Data
