@@ -28,6 +28,13 @@ const Data = [
         link: "https://github.com/BassGI1/TicTacToe"
     },
     {
+        title: "Calculator",
+        src: "csharpcalc",
+        codedin: ["https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png", "https://static.thenounproject.com/png/115701-200.png"],
+        description: "This project was written using the WPF framework on C#. It is a fully functional desktop calculator",
+        link: "https://github.com/BassGI1/C--Calculator"
+    },
+    {
         title: "Apples to Oranges",
         src: "applestooranges",
         codedin: ["https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
