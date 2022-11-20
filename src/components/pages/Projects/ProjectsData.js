@@ -59,7 +59,7 @@ const Data = [
         title: "Tracker App",
         src: "tracker",
         codedin: ["https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
-        description: "This is a project that I use on a daily basis. It's an application that tracks . . . anthing you want it to! I use it to track my sleep quality everyday. It is also able to keep a record of previous months. In the top right, it gives a cumulative 'score' of the historical ratings.",
+        description: "This is a project that I use on a daily basis. It's an application that tracks . . . anything you want it to! I use it to track my sleep quality everyday. It is also able to keep a record of previous months. In the top right, it gives a cumulative 'score' of the historical ratings.",
         link: "https://bassamstracker.netlify.app/"
     },
     {
