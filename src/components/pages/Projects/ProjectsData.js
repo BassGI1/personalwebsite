@@ -14,11 +14,11 @@ const Data = [
         link: "https://bassamsnotesapp.netlify.app/"
     },
     {
-        title: "YouTube to MP3",
-        src: "youtubetomp3",
-        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"],
-        description: "This is a project that was surprisingly simple to code; I made it in about an hour! It's also one that has been quite useful funnily enough.",
-        link: "https://github.com/BassGI1/youtubetomp3"
+        title: "Abstract Art Generator",
+        src: "abstract",
+        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png", "https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_black.png"],
+        description: "This project was really fun to make! It essentially generates a piece of abstract art depending on the parameters given by the user. Below are two sample generations based on two different parameters.",
+        link: "https://bassamstracker.netlify.app/"
     },
     {
         title: "Tic-Tac-Toe",
@@ -47,6 +47,13 @@ const Data = [
         codedin: ["https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"],
         description: "This is the project that you're currently on. It was made using React.js, and I aim to maintain and update this project for the next few years.",
         link: "#"
+    },
+    {
+        title: "YouTube to MP3",
+        src: "youtubetomp3",
+        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"],
+        description: "This is a project that was surprisingly simple to code; I made it in about an hour! It's also one that has been quite useful funnily enough.",
+        link: "https://github.com/BassGI1/youtubetomp3"
     },
     {
         title: "Pomodoro Timer",
