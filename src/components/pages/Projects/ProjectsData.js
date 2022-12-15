@@ -14,11 +14,11 @@ const Data = [
         link: "https://bassamsnotesapp.netlify.app/"
     },
     {
-        title: "Abstract Art Generator",
-        src: "abstract",
-        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png", "https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_black.png"],
-        description: "This project was really fun to make! It essentially generates a piece of abstract art depending on the parameters given by the user. Below are two sample generations based on two different parameters.",
-        link: "https://bassamstracker.netlify.app/"
+        title: "Automatic Wallpaper Changer",
+        src: "wallpaper",
+        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"],
+        description: "This is a project that was made out of frustration! I had always wanted some sort of application that would give me fresh new wallpapers whenever I needed them, but such an application didn't exist! I decided to make it myself, and I think it turned out great!",
+        link: "https://github.com/BassGI1/wallpaperchanger"
     },
     {
         title: "Tic-Tac-Toe",
@@ -26,6 +26,13 @@ const Data = [
         codedin: ["https://i.ibb.co/ZN6L4KK/C-Icon.png"],
         description: "This project was written entirely in C++. I made it over the course of one afternoon because I was practicing my C++.",
         link: "https://github.com/BassGI1/TicTacToe"
+    },
+    {
+        title: "Abstract Art Generator",
+        src: "abstract",
+        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png", "https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_black.png"],
+        description: "This project was really fun to make! It essentially generates a piece of abstract art depending on the parameters given by the user. Below are two sample generations based on two different parameters.",
+        link: "https://github.com/BassGI1/abstract_generator"
     },
     {
         title: "Calculator",
