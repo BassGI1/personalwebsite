@@ -25,7 +25,7 @@ const Data = [
         start: 'September 2022',
         end: 'December 2022',
         description: [
-            "Designed several API’s, including the grant assessment API,which is used by thousands daily",
+            "Designed several API’s, including the grant assessment API, which is used by thousands daily",
             "Designed multiple frontend pages of the UI, which are used by all internal and external users daily",
             "Wrote and deployed multiple web scrapers which greatly improved efficiency of the Data team",
             "Migrated data from previous database to new PostgreSQL database",
