@@ -152,13 +152,13 @@ const Data = [
 ],
     [ 
         "Co-op 2",
-        "I learned a lot this term too. For one, I got to work with professional developers and I was able to get a look at production quality code. I was fortunate enough to work with people who were always willing to teach me and answer any questions I might have had.",
+        "I feel like I made a genuine difference at GrantMatch this term. It seemed like every week, my code was pushed for thousands of people to use and see. It was certainly fun!",
         "grantmatch",
-        "In the beginning of the term, I was given a few menial changes that were my responsibility. These tasks took no more than half an hour at a time, and essentially served as a means to acclimate me to the source code. I was able to finish all of these tasks, and I was finally given my first 'big' project; the LetsGo Dining mobile app! The app allows groups to randomly find a suitable restaurant based on the preferences of each individual. It was incredible to study the logic, and to implement my own. I was responsible for routing the users to the Yelp page of the selected restaurant, as well as integrating a payment method using the Stripe API. Alongside this project, I was still working on maintaining and developing for the ecommerce website at the same time. This project was my first exposure to API's, and I think I was able to adapt very well. By the end of the term, the app was ready for deployment to the Google Play/App stores, and although my time at the company terminated before the app went live, I was still able to assist in the deployment. The app was built using the Expo platform, and a few modules that were used in the app were depreciated. It was my responsibility to update these modules, and I managed to ready the app for deployment.",
+        "As with my last term, the beginning was a few onboarding tasks. Simple things like automating background tasks and designing a frontend component. As the term progressed however, the tasks became more and more complex, with each one being of greater importance than the last. For example, by the third week, I was already tasked with designing a whole new dashboard for the GrantMatch platform! It was awesome to see my handiwork being used by all the customers and employees! By the end of the term, I was given some time to study the grant prediction logistic regression model designed by the data engineers, and was told to write my own. At the start of the term, I would never have thought that I would be touching artificial intelligence at all, but I did. I was very fortunate to work with some of the smartest people I've ever met. And to top it all off, I was able to get an outstanding co-op evaluation too! Overall, an incredible term; one that I'm glad went the way it did.",
         [
             {
                 name: "Python",
-                description: "Was used for building the backend of the website"
+                description: "Was used for building the backend of the website, as well as several other tasks such as data migration"
             },
             {
                 name: "Django",
@@ -179,6 +179,14 @@ const Data = [
             {
                 name: "JavaScript",
                 description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "Vue",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "Jest",
+                description: "Was used for unit testing the frontend of the website"
             },
             {
                 name: "HTML",

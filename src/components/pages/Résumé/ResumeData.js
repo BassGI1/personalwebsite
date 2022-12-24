@@ -8,7 +8,7 @@ const Data = [
             phone: "519-501-9140"
         },
         qualifications: [
-            "Working knowledge of C, C++, React.js, ReactNative.js, Vue.js, Python, Django, JavaScript, TypeScript, PHP, HTML, and CSS technologies - always willing to learn more",
+            "Working knowledge of C, C++, C#, JavaScript, React.js, ReactNative.js, Vue.js, Node.js, Python, Django, PHP, HTML, and CSS technologies - always willing to learn more",
             "Excellent time management - ability to thrive individually and in teams",
             "Excellent critical thinking",
             "Excellent work-ethic - developed through years of academics and jobs",
@@ -18,6 +18,21 @@ const Data = [
             "Fluent in Arabic, intermediate fluency French",
             "Strong team-work skills"
     ]},
+    {
+        type: "job",
+        company: 'GrantMatch',
+        title: 'Software Developer',
+        start: 'September 2022',
+        end: 'December 2022',
+        description: [
+            "Designed several API’s, including the grant assessment API,which is used by thousands daily",
+            "Designed multiple frontend pages of the UI, which are used by all internal and external users daily",
+            "Wrote and deployed multiple web scrapers which greatly improved efficiency of the Data team",
+            "Migrated data from previous database to new PostgreSQL database",
+            "Wrote several unit tests, increasing code coverage by over 20%",
+            " Automated several background tasks, greatly reducing workload of the Data team"
+        ]
+    },
     {
         type: "job",
         company: 'Pexhouse',

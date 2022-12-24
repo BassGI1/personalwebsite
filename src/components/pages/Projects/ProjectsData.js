@@ -23,7 +23,7 @@ const Data = [
     {
         title: "Tic-Tac-Toe",
         src: "tic",
-        codedin: ["https://i.ibb.co/ZN6L4KK/C-Icon.png"],
+        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"],
         description: "This project was written entirely in C++. I made it over the course of one afternoon because I was practicing my C++.",
         link: "https://github.com/BassGI1/TicTacToe"
     },
@@ -93,7 +93,7 @@ const Data = [
     {
         title: "Goku Drawing (unfinished)",
         src: "goku",
-        codedin: ["https://i.ibb.co/x3C47TK/pythonlogo.png"],
+        codedin: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"],
         description: "This is an unfinished project that I've been working on using Python's tkinter library. It's a drawing of one of my personal favourite characters, Goku.",
         link: "https://github.com/BassGI1/GokuDrawing"
     },
