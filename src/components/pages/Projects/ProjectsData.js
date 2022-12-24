@@ -35,7 +35,7 @@ const Data = [
         link: "https://github.com/BassGI1/abstract_generator"
     },
     {
-        title: "Calculator",
+        title: "Desktop Calculator",
         src: "csharpcalc",
         codedin: ["https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png", "https://static.thenounproject.com/png/115701-200.png"],
         description: "This project was written using the WPF framework on C#. It is a fully functional desktop calculator",
