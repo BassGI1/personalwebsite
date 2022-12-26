@@ -25,10 +25,10 @@ export default function Employment() {
             <div onClick={() => {
                 setAnimate(true)
                 setTimeout(() => setCheck(true), 1000)
-                setTimeout(() => {
-                    setAnimate(false)
-                    setCheck(false)
-                }, 10000)
+                // setTimeout(() => {
+                //     setAnimate(false)
+                //     setCheck(false)
+                // }, 10000)
                 getResume()
             }} style={{width: "100%", alignItems: "center", justifyContent: "center", display: "flex", marginTop: "2vh", height: "60px", overflow: "hidden"}}>
                 <h2 className={`${animate ? "downloadPDF" : ''}`} style={{backgroundColor: "#2968d0", borderRadius: "1vh", width: "200px", justifyContent: "center", alignItems: "center", display: "flex", height: "100%", cursor: "pointer"}}>{!animate ? "Download PDF" : ""}</h2>
