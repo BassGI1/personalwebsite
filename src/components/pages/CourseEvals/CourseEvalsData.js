@@ -205,7 +205,45 @@ const Data = [
                 description: "Was used for versioning and to ensure that multiple people could work at once without conflicts"
             },
         ]
-    ]
+    ],
+    ["2A", "The most enjoyable term of my university experience so far (probably because there was no physics courses). It seems as though we're starting to specialize in computers instead of building up the required knowledge in order to understand the higher material. This term has given me a deeper understanding of how computers are designed, and the algorithms that make them as efficient as they are. If this term has done anything for me, it has stimulated my interest in my degree even more!", 
+        {
+            title: "ECE 109",
+            rating: 0.8,
+            about: "Materials Chemistry for Engineers",
+            experience: "A chemistry course. The professor did an excellent job in teaching and I thought that the marking was extremely fair. Chemistry was never my favourite subject, but this course was both fun and challenging."
+        },
+        {
+            title: "ECE 204",
+            rating: 0.5,
+            about: "Numerical Methods",
+            experience: "The content was extremely interesting, but I was not a fan of the way in which the course was taught. The algorithms I studied in this course were fascinating and gave me an entirely new view on optimization and the applications of approximations in computing. Would have been one of my favourite course of my undergrad had it been taught in a more rigid manner."
+        },
+        {
+            title: "ECE 205",
+            rating: 1,
+            about: "Advanced Calculus 1",
+            experience: "I think this term made me realize how much I enjoy pure mathematics. The knowledge gained from this course seems extremely applicable to everything I want to pursue in my career, as well as being very fun! The only issue I had with this course is that it was one of the last pure math courses I'll take in my undergrad."
+        },
+        {
+            title: "ECE 222",
+            rating: 1,
+            about: "Digital Computers",
+            experience: "My favourite course in my undergrad before this term was ECE 124 - Digital Circuits and Systems. I expected this course to be much of the same, but I was surprised to see how little the content in that course was needed for this one. That being said, this was still my favourite course of the term. Doing the labs in this course made me feel like a legitimate engineer, and learning about hardware architecture opened a whole new topic that I never knew I would be so invested in."
+        },
+        {
+            title: "ECE 240",
+            rating: 0.7,
+            about: "Electronic Circuits 1",
+            experience: "I expected this course to build off ECE 140 - Linear Circuits, and it certainly did. By the end of the course, 140 seemed like child's play. However, the course was surprisingly fun and was very well taught and marked."
+        },
+        {
+            title: "ECE 250",
+            rating: 0.8,
+            about: "Algorithms and Data Structures",
+            experience: "A lot of the content in this course was somewhat intuitive but could get complicated at times. I thoroughly enjoyed the projects and I have a much deeper understanding of why optimization is such an important thing in software development. Overall, an excellent course."
+        }
+    ],
 ]
 
 export default Data
