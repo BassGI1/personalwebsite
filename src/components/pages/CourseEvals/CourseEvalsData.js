@@ -131,7 +131,7 @@ const Data = [
 
             <div style={{textAlign: "center"}}>
 
-                <img src={require('./assets/1B/1A_Schedule.jpg')} alt="1A Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+                <img src={process.env.PUBLIC_URL + `/terms/1A_Schedule.jpg`} alt="1A Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
 
                 <h3>Average 1A Term Week</h3>
 
@@ -141,7 +141,7 @@ const Data = [
 
             <div style={{textAlign: "center"}}>
 
-                <img src={require('./assets/1B/1B_Schedule.png')} alt="1B Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+                <img src={process.env.PUBLIC_URL + `/terms/1B_Schedule.png`} alt="1B Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
 
                 <h3>Average 1B Term Week</h3>
 
@@ -243,6 +243,62 @@ const Data = [
             about: "Algorithms and Data Structures",
             experience: "A lot of the content in this course was somewhat intuitive but could get complicated at times. I thoroughly enjoyed the projects and I have a much deeper understanding of why optimization is such an important thing in software development. Overall, an excellent course."
         }
+    ],
+    [ 
+        "Co-op 3",
+        "I feel like I made a genuine difference at GrantMatch this term. It seemed like every week, my code was pushed for thousands of people to use and see. It was certainly fun!",
+        "pexhouse",
+        "As with my last term, the beginning was a few onboarding tasks. Simple things like automating background tasks and designing a frontend component. As the term progressed however, the tasks became more and more complex, with each one being of greater importance than the last. For example, by the third week, I was already tasked with designing a whole new dashboard for the GrantMatch platform! It was awesome to see my handiwork being used by all the customers and employees! By the end of the term, I was given some time to study the grant prediction logistic regression model designed by the data engineers, and was told to write my own. At the start of the term, I would never have thought that I would be touching artificial intelligence at all, but I did. I was very fortunate to work with some of the smartest people I've ever met. And to top it all off, I was able to get an outstanding co-op evaluation too! Overall, an incredible term; one that I'm glad went the way it did.",
+        [
+            {
+                name: "Python",
+                description: "Was used for building the backend of the website, as well as several other tasks such as data migration"
+            },
+            {
+                name: "Django",
+                description: "Was used for building the front and backends of the website"
+            },
+            {
+                name: "Docker",
+                description: "Was used for containerizing web application"
+            },
+            {
+                name: "Celery",
+                description: "Was used for scheduling and running automatic background tasks"
+            },
+            {
+                name: "PostgreSQL",
+                description: "Was used as the designated database system"
+            },
+            {
+                name: "JavaScript",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "Vue",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "Jest",
+                description: "Was used for unit testing the frontend of the website"
+            },
+            {
+                name: "HTML",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "CSS",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "PHP",
+                description: "Migrating production code to Python from PHP was done"
+            },
+            {
+                name: "Git",
+                description: "Was used for versioning and to ensure that multiple people could work at once without conflicts"
+            },
+        ]
     ],
 ]
 

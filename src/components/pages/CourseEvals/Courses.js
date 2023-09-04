@@ -25,7 +25,7 @@ export default function Courses(props) {
 
                 <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
 
-                    <img src={require(`./assets/${info[0]}/${info[2]}.png`)} alt='Logo' style={{height: "25vh"}}/>
+                    <img src={process.env.PUBLIC_URL + `/companyLogos/${info[2]}.png`} alt='Logo' style={{height: "25vh"}}/>
 
                 </div>
 
@@ -87,7 +87,7 @@ const Tech = ({term, name, description}) => {
 
         <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap", width: "25vh", margin: "0vh 2vw 2vw 2vw"}}>
             
-            <img src={require(`./assets/${name}.png`)} style={{maxHeight: "25vh"}} alt={name}/>
+            <img src={process.env.PUBLIC_URL + `/languages/${name}.png`} style={{maxHeight: "25vh"}} alt={name}/>
 
             <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
                 <h2 style={{margin: "2vh 0vh 2vh 0vh"}}>{name}</h2>
