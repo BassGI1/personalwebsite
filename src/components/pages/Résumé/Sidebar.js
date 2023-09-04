@@ -4,7 +4,7 @@ import Data from "./ResumeData.js";
 export default function Sidebar() {
 
     let info = Data[0].info
-    const languages = "JavaScript, TypeScript, Python, C, C Sharp, C++, Java, SQL, HTML, CSS, MATLAB, ARM Assembly, VHDL".split(", ")
+    const languages = "JavaScript, TypeScript, Python, C, C Sharp, C++, Java, SQL, MongoDB, HTML, CSS, MATLAB, ARM Assembly, VHDL".split(", ")
     const frameworks = "React, React Native, Vue, Node, Express, Socket.io, Django, Spring Boot".split(", ")
     const tools = "Git, Docker, AWS, Google Cloud, Linux, Apache".split(", ")
 
