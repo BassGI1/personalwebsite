@@ -10,6 +10,17 @@ const Data = [
     },
     {
         type: "job",
+        company: 'LetsGo Dining',
+        title: 'Full Stack Software Developer',
+        start: 'August 2023',
+        end: 'Current',
+        description: [
+            "Created the LetsGo mobile application beta signup website",
+            "Created an automatic emailing that allows users to send specific app build requirements to software team"
+        ]
+    },
+    {
+        type: "job",
         company: 'Pexhouse',
         title: 'Full Stack Software Developer',
         start: 'May 2023',
@@ -47,6 +58,17 @@ const Data = [
             "Ensured that the online ecommerce website and the mobile app were updated and streamlined",
             "Used React.js and ReactNative.js in order to integrate Yelp API's into a brand new mobile application",
             "Assisted in the deployment of a new mobile application on the App Store and the Google Play Store"
+        ]
+    },
+    {
+        type: "job",
+        company: 'Muslim Student Association of the University of Waterloo',
+        title: 'Tech Team Lead',
+        start: 'January 2023',
+        end: 'August 2023',
+        description: [
+            "Developed several core pages of the UW MSA website", 
+            "Developed the backend users API using the GraphQL standard"
         ]
     },
     {
