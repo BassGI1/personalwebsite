@@ -58,7 +58,7 @@ const Data = [
                 description: "Was used for building the app, alongside some aspects of the website"
             },
             {
-                name: "ReactNative",
+                name: "React Native",
                 description: "Was used for building the app"
             },
             {
