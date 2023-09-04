@@ -2,22 +2,25 @@ const Data = [
     {
         type: 'not',
         info: {
-            term: "2A",
-            email: "b2elnagg@uwaterloo.ca",
+            term: "2B",
+            email: "basmaym148@gmail.com",
             id: "#20963633",
             phone: "519-501-9140"
         },
-        qualifications: [
-            "Working knowledge of C, C++, C#, JavaScript, React.js, ReactNative.js, Vue.js, Node.js, Python, Django, PHP, HTML, and CSS technologies - always willing to learn more",
-            "Excellent time management - ability to thrive individually and in teams",
-            "Excellent critical thinking",
-            "Excellent work-ethic - developed through years of academics and jobs",
-            "Detail-attentive - helpful for debugging",
-            "Adaptability - have used various technologies in different work environments",
-            "Punctuality - capable of meeting deadlines",
-            "Fluent in Arabic, intermediate fluency French",
-            "Strong team-work skills"
-    ]},
+    },
+    {
+        type: "job",
+        company: 'Pexhouse',
+        title: 'Full Stack Software Developer',
+        start: 'May 2023',
+        end: 'August 2023',
+        description: [
+            "Designed the hosting, matching and serving of restaurants features on the backend using node.js and deployed the backend to a remote server on an AWS EC2 instance",
+            "Designed and created the UI of the application with react native, coupled with the socket integration with the backend using socket.io",
+            "Implemented a restaurant promotion payment system using Stripe",
+            "Created a beta release build that was sent to thousands of users"
+        ]
+    },
     {
         type: "job",
         company: 'GrantMatch',
@@ -43,7 +46,6 @@ const Data = [
             'Used various technologies, including Javascript, HTML, CSS, and PHP to develop/maintain features on the ecommerce website',
             "Ensured that the online ecommerce website and the mobile app were updated and streamlined",
             "Used React.js and ReactNative.js in order to integrate Yelp API's into a brand new mobile application",
-            "Integrated a payment method in the aforementioned application using the Stripe API",
             "Assisted in the deployment of a new mobile application on the App Store and the Google Play Store"
         ]
     },

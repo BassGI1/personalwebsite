@@ -14,7 +14,7 @@ export default function Home(props) {
 
             <iframe width="600" height="350" src="https://www.youtube.com/embed/Zv5WHkgHyMk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="video"></iframe>
 
-            <p className="routetovids" style={{color: colour}} onClick={() => props.setPage('Vids')}>Click me to view all co-op videos</p>
+            <p className="routetovids" style={{color: colour}} onClick={() => props.setPage('Vids')}>Click here to view all co-op videos</p>
 
         </div>
 
