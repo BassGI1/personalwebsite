@@ -6,7 +6,7 @@ export default function Sidebar() {
     let info = Data[0].info
     const languages = "JavaScript, TypeScript, Python, C, C Sharp, C++, Java, SQL, MongoDB, HTML, CSS, MATLAB, ARM Assembly, VHDL".split(", ")
     const frameworks = "React, React Native, Vue, Node, Express, Socket.io, Django, Spring Boot".split(", ")
-    const tools = "Git, Docker, AWS, Google Cloud, Linux, Apache".split(", ")
+    const tools = "Git, Docker, AWS, Google Cloud, Linux, Apache, Nginx".split(", ")
 
     return (
 
@@ -15,7 +15,7 @@ export default function Sidebar() {
                 <h5 className="ressideelem">{`${info.term} Computer Engineering at the University of Waterloo`}</h5>
                 <h5 className="ressideelem" style={{marginTop: "-1vh"}}>{info.email}<span style={{marginLeft: "2vh"}}>{info.phone}</span><span style={{marginLeft: "2vh"}}>{"ID: " + info.id}</span></h5>
                 <div style={{height: "80%", display: "flex", flexWrap: "wrap", marginBottom: "0vh", width: "100%", flexDirection: "column"}}>
-                    <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap", height: "100%"}}>
+                    <div className="hidescrollbar" style={{display: "flex", justifyContent: "center", flexWrap: "wrap", height: "100%"}}>
                         <h2 style={{width: "100%", textAlign: "center"}}>Languages</h2>
                         {languages.map(l => <TechView name={l} key={l}/>)}
                         <h2 style={{width: "100%", textAlign: "center"}}>Frameworks</h2>

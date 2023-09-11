@@ -192,6 +192,15 @@ nav{
   flex-wrap: wrap;
 }
 
+.hidescrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .ressideelem{
   margin: 2vh 2vw;
   font-size: medium;

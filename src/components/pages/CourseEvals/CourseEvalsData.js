@@ -275,6 +275,10 @@ const Data = [
               description: "Was used for hosting the backend of the application"  
             },
             {
+                name: "Nginx",
+                description: "Was used for the web server for the backend hosting"  
+              },
+            {
                 name: "JavaScript",
                 description: "Was used for building the frontend and backend of the application"
             },
