@@ -1,6 +1,5 @@
 import React from "react";
 import Data from "./CourseEvalsData";
-//import pexhouse from "./images/pexhouse.png"
 
 export default function Courses(props) {
 
