@@ -246,41 +246,41 @@ const Data = [
     ],
     [ 
         "Co-op 3",
-        "I feel like I made a genuine difference at GrantMatch this term. It seemed like every week, my code was pushed for thousands of people to use and see. It was certainly fun!",
+        "Every term seems to be just as fruitful as the last. I learned so much this term about all aspects of software engineering and got to use so many new technologies! This is the one of the main reasons I love working with software so much; there's always something new to learn.",
         "pexhouse",
-        "As with my last term, the beginning was a few onboarding tasks. Simple things like automating background tasks and designing a frontend component. As the term progressed however, the tasks became more and more complex, with each one being of greater importance than the last. For example, by the third week, I was already tasked with designing a whole new dashboard for the GrantMatch platform! It was awesome to see my handiwork being used by all the customers and employees! By the end of the term, I was given some time to study the grant prediction logistic regression model designed by the data engineers, and was told to write my own. At the start of the term, I would never have thought that I would be touching artificial intelligence at all, but I did. I was very fortunate to work with some of the smartest people I've ever met. And to top it all off, I was able to get an outstanding co-op evaluation too! Overall, an incredible term; one that I'm glad went the way it did.",
+        "I was given a lot of responsibility this term. The mobile app went from a non-functional piece of frontend software, to a fully-fledged beta released mobile application being tested by hundreds everyday. I built the entirety of the backend using node.js and socket.io and was even able to setup the backend being hosted on an AWS EC2 instance. Had you told me I would've been capable of this two years ago, I would've laughed in your face. Alongside the backend and deployments, I also built several pages of the frontend, and customized the application according to the feedback given to my superiors through the public. Alongside this, I also setup several end-to-end tests for the app to ensure that it remained covered! I feel fortunate to have been given the opportunity to prove myself throughout the course of the term. I was also given small tasks to work on for the website.",
         [
             {
-                name: "Python",
-                description: "Was used for building the backend of the website, as well as several other tasks such as data migration"
+                name: "Node",
+                description: "Was used for building the backend of the website"
             },
             {
-                name: "Django",
-                description: "Was used for building the front and backends of the website"
+                name: "Socket.io",
+                description: "Was used for some of the frontend-backend integration"
             },
             {
-                name: "Docker",
-                description: "Was used for containerizing web application"
+                name: "React Native",
+                description: "Was used for building the frontend of the application"
             },
             {
-                name: "Celery",
-                description: "Was used for scheduling and running automatic background tasks"
+                name: "React",
+                description: "Was used for some of the website frontend"
             },
             {
-                name: "PostgreSQL",
-                description: "Was used as the designated database system"
+                name: "Google Cloud",
+                description: "Was used for the database and the user authentication for the application"
+            },
+            {
+              name: "AWS",
+              description: "Was used for hosting the backend of the application"  
             },
             {
                 name: "JavaScript",
-                description: "Was used for building the frontend of the website"
-            },
-            {
-                name: "Vue",
-                description: "Was used for building the frontend of the website"
+                description: "Was used for building the frontend and backend of the application"
             },
             {
                 name: "Jest",
-                description: "Was used for unit testing the frontend of the website"
+                description: "Was used for writing tests for the application"
             },
             {
                 name: "HTML",
@@ -292,11 +292,11 @@ const Data = [
             },
             {
                 name: "PHP",
-                description: "Migrating production code to Python from PHP was done"
+                description: "Was used for building a few features of the website"
             },
             {
                 name: "Git",
-                description: "Was used for versioning and to ensure that multiple people could work at once without conflicts"
+                description: "Was used for versioning"
             },
         ]
     ],
