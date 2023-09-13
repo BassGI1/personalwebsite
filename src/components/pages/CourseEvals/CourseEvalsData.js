@@ -302,6 +302,10 @@ const Data = [
                 name: "Git",
                 description: "Was used for versioning"
             },
+            {
+                name: "Android Studio",
+                description: "Was used to emulate an android phone to visualize the app"
+            },
         ]
     ],
 ]
