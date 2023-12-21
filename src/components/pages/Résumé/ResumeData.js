@@ -13,7 +13,7 @@ const Data = [
         company: 'LetsGo Dining',
         title: 'Full Stack Software Developer',
         start: 'August 2023',
-        end: 'Current',
+        end: 'December 2023',
         description: [
             "Created the LetsGo mobile application beta signup website",
             "Created an automatic emailing that allows users to send specific app build requirements to software team"

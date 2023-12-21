@@ -43,9 +43,9 @@ nav{
 }
 
 .name{
-  font-weight: 10;
+  font-weight: 20;
   font-size: 1.75rem;
-  font-family: 'Rubik Beastly', cursive;
+  font-family: 'Baloo Tamma 2', cursive;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1vw;
@@ -102,7 +102,7 @@ nav{
 }
 
 .boxes:hover{
-  animation: expands 1s;
+  animation: expands .2s;
   animation-fill-mode: forwards;
 }
 

@@ -9,13 +9,13 @@ export default function CourseEvals(props) {
     const [term, setTerm] = useState('')
 
     let color = props.dark ? "white" : "#21222A"
-    let terms = ['1A', 'Co-op 1', '1B', 'Co-op 2', '2A', 'Co-op 3']
+    let terms = ['1A', 'Co-op 1', '1B', 'Co-op 2', '2A', 'Co-op 3', '2B']
 
     return(
 
         <div style={{color: props.dark ? "white" : "#282D35", backgroundColor : props.dark ? "#282D35" : "white"}} className="completepage">
 
-            {term === '' && <h2 style={{color: color}} className="evalstitle">This is just an archive of the experiences that I've had during my time at the University of Waterloo.</h2>}
+            {term === '' && <h2 style={{color: color}} className="evalstitle">This is just an archive of my thoughts on all the terms that I've had during my time at the University of Waterloo.</h2>}
 
             {term === '' && terms.map(x => <Box dark={props.dark} id={x} setTerm={setTerm} key={x}/>)}
 
