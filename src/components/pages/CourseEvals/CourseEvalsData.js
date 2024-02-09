@@ -361,7 +361,71 @@ const Data = [
     
             </div>
         }
-    ]
+    ],
+    [ 
+        "Co-op 4",
+        "sample blurb",
+        "theScore",
+        "sample experience",
+        [
+            {
+                name: "Node",
+                description: "Was used for building the backend of the website"
+            },
+            {
+                name: "Socket.io",
+                description: "Was used for some of the frontend-backend integration"
+            },
+            {
+                name: "React Native",
+                description: "Was used for building the frontend of the application"
+            },
+            {
+                name: "React",
+                description: "Was used for some of the website frontend"
+            },
+            {
+                name: "Google Cloud",
+                description: "Was used for the database and the user authentication for the application"
+            },
+            {
+              name: "AWS",
+              description: "Was used for hosting the backend of the application"  
+            },
+            {
+                name: "Nginx",
+                description: "Was used for the web server for the backend hosting"  
+              },
+            {
+                name: "JavaScript",
+                description: "Was used for building the frontend and backend of the application"
+            },
+            {
+                name: "Jest",
+                description: "Was used for writing tests for the application"
+            },
+            {
+                name: "HTML",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "CSS",
+                description: "Was used for building the frontend of the website"
+            },
+            {
+                name: "PHP",
+                description: "Was used for building a few features of the website"
+            },
+            {
+                name: "Git",
+                description: "Was used for versioning"
+            },
+            {
+                name: "Android Studio",
+                description: "Was used to emulate an android phone to visualize the app"
+            },
+        ]
+    ],
 ]
 
 export default Data
