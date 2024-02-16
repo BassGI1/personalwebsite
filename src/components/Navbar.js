@@ -12,11 +12,11 @@ export default function Navbar(props) {
     }
 
     return (
-        <nav style={{backgroundColor: props.dark ? "#21222A" : "#eeeeee"}}>
+        <nav style={{backgroundColor: props.dark ? "#21222A" : "#eeeeee", display: "flex", justifyContent: "space-evenly"}}>
 
             <img src={logo} alt="no" className={`logo ${rotate ? "rotate" : ""}`} onClick={rotation}/>
 
-            <p className="name">Bassam El-Naggar</p>
+            {/* <p className="name">Bassam El-Naggar</p> */}
 
             <button className="toggle" style={{backgroundColor: props.dark ? "white" : "#21222A"}} onClick={() => props.toggleDark(props.dark)}>{`Toggle ${props.dark ? "Light" : "Dark"}`}</button>
 

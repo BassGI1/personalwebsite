@@ -4,9 +4,7 @@ const starColours = ["#BCFFFFFF", "#EBD9A5", "#FFFBCB", "#E7837D", "#FFFFFF", "#
 
 const Star = ({ colour, top, left, dimensions }) => {
     return (
-        <div className="star" style={{backgroundImage: `radial-gradient(75% 75% at 50% 50%, ${colour} 0%, #073AFF00 55%)`, height: dimensions, width: dimensions, left: left, top: top, animation: `glow ${Math.random()*0.75 + 0.25}s infinite`}}>
-
-        </div>
+        <div className="star" style={{backgroundImage: `radial-gradient(75% 75% at 50% 50%, ${colour} 0%, #073AFF00 55%)`, height: dimensions, width: dimensions, left: left, top: top, animation: `glow ${Math.random()*0.75 + 0.25}s infinite`}}></div>
     )
 }
 
@@ -16,15 +14,15 @@ export default function AboutMe({dark}){
 
     useEffect(() => {
         const div = document.getElementsByClassName("aboutme")[0]
-        for (let i = 0; i < (div.clientHeight*div.clientWidth) / 1200; ++i){
-            setStars(x => [...x, <Star colour={starColours[Math.floor(Math.random()*starColours.length)]} top={`${Math.random()*div.clientHeight}px`} left={`${Math.random()*div.clientWidth}px`} dimensions={`${Math.random()*15 + 5}px`} />])
+        for (let i = 0; i < (div.scrollHeight*div.clientWidth) / 2000; ++i){
+            setStars(x => [...x, <Star colour={starColours[Math.floor(Math.random()*starColours.length)]} top={`${Math.random()*(div.scrollHeight)}px`} left={`${Math.random()*div.clientWidth}px`} dimensions={`${Math.random()*15 + 5}px`} />])
         }
     }, [])
 
     return (
-        <div className="completepage aboutme" style={{filter: dark ? "invert(0%)" : "invert(100%)"}}>
+        <div className="completepage aboutme" style={{filter: dark ? "invert(0%)" : "invert(100%)"}} >
             {stars}
-            <Star dimensions="2000px" />
+
         </div>
     )
 }
