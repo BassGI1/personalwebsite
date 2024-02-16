@@ -131,7 +131,7 @@ const Data = [
 
             <div style={{textAlign: "center"}}>
 
-                <img src={process.env.PUBLIC_URL + `/terms/1A_Schedule.jpg`} alt="1A Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+                <img src={process.env.PUBLIC_URL + `/terms/1A_Schedule.jpg`} alt="1A Schedule" style={{width: "30vw", border: "3px solid #de2323", borderRadius: "2vh"}} />
 
                 <h3>1A Term Week</h3>
 
@@ -141,7 +141,7 @@ const Data = [
 
             <div style={{textAlign: "center"}}>
 
-                <img src={process.env.PUBLIC_URL + `/terms/1B_Schedule.png`} alt="1B Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+                <img src={process.env.PUBLIC_URL + `/terms/1B_Schedule.png`} alt="1B Schedule" style={{width: "30vw", border: "3px solid #de2323", borderRadius: "2vh"}} />
 
                 <h3>1B Term Week</h3>
 
@@ -353,7 +353,7 @@ const Data = [
     
                 <div style={{textAlign: "center"}}>
     
-                    <img src={process.env.PUBLIC_URL + `/terms/252_Labs_Git.png`} alt="1B Schedule" style={{width: "30vw", border: "3px solid #2968D0", borderRadius: "2vh"}} />
+                    <img src={process.env.PUBLIC_URL + `/terms/252_Labs_Git.png`} alt="1B Schedule" style={{width: "30vw", border: "3px solid #de2323", borderRadius: "2vh"}} />
     
                     <h3>Average ECE 252 Lab</h3>
     

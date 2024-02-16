@@ -20,6 +20,7 @@ nav{
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;
+  border-radius: 100rem;
 }
 
 .toggle{
@@ -33,7 +34,7 @@ nav{
   margin-right: 4vw;
   box-shadow: 0 0.5vh rgb(141, 141, 141);
   border: none;
-  color: #2968D0;
+  color: #de2323;
   font-weight: 1000;
 }
 
@@ -49,7 +50,7 @@ nav{
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1vw;
-  color: #2968D0;
+  color: #de2323;
 }
 
 .sec{
@@ -70,7 +71,7 @@ nav{
 }
 
 @keyframes seccolor{
-  100% {background-color: #8f8f8f; color: #2968D0;}
+  100% {background-color: #8f8f8f; color: #de2323;}
 }
 
 .completepage{
@@ -86,7 +87,7 @@ nav{
 
 .boxes{
   display: inline-grid;
-  border: 3px solid #2968D0;
+  border: 3px solid #de2323;
   width: 15.5vw;
   height: 15.5vw;
   margin: 0px 2.15vw 1.5vw 2.15vw;
@@ -111,9 +112,9 @@ nav{
 }
 
 .return{
-  box-shadow: 0.25vh 0.5vh #2968D0;
+  box-shadow: 0.25vh 0.5vh #de2323;
   border: none;
-  background-color: #5DD9FB;
+  background-color: #f73e4b;
   font-weight: 1000;
   margin-left: 2vw;
   margin-right: auto;
@@ -154,7 +155,7 @@ nav{
   margin-right: auto;
   margin-top: -5vh;
   border-radius: 2vw;
-  border: 3px solid #2968D0;
+  border: 3px solid #de2323;
 }
 
 .soon{
@@ -186,7 +187,7 @@ nav{
   width: 30vw;
   height: 85vh;
   position: fixed;
-  border: 3px solid #2968D0;
+  border: 3px solid #de2323;
   border-radius: 2.5vw;
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +217,7 @@ nav{
   margin: 3vh 2vw 0px 2vw;
   display: grid;
   overflow: hidden;
-  border: 3px solid #2968D0;
+  border: 3px solid #de2323;
   border-radius: 2.5vw;
 }
 

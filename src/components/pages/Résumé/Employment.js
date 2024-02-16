@@ -31,7 +31,7 @@ export default function Employment() {
                 // }, 10000)
                 getResume()
             }} style={{width: "100%", alignItems: "center", justifyContent: "center", display: "flex", marginTop: "2vh", height: "60px", overflow: "hidden"}}>
-                <h2 className={`${animate ? "downloadPDF" : ''}`} style={{backgroundColor: "#2968d0", borderRadius: "1vh", width: "200px", justifyContent: "center", alignItems: "center", display: "flex", height: "100%", cursor: "pointer"}}>{!animate ? "Download PDF" : ""}</h2>
+                <h2 className={`${animate ? "downloadPDF" : ''}`} style={{backgroundColor: "#de2323", borderRadius: "1vh", width: "200px", justifyContent: "center", alignItems: "center", display: "flex", height: "100%", cursor: "pointer"}}>{!animate ? "Download PDF" : ""}</h2>
                 {check &&
                 <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" style={{height: "100%", overflow: "visible"}}>
                     <path class="checkmark__check" fill="none" stroke="green" d="M62.5,30 l25,20 l50,-45"/>
