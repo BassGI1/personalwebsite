@@ -265,3 +265,20 @@ nav{
 @keyframes stroke{
   100%{stroke-dashoffset: 0}
 }
+
+.aboutme{
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(39% 47% at 73% 37%, #1A1B82FF 0%, #3C529D00 100%),radial-gradient(75% 75% at 69% 42%, #D11CE061 0%, #00000017 100%),radial-gradient(76% 75% at 62% 73%, #791A53FF 0%, #00000000 100%),radial-gradient(75% 75% at 50% 50%, #000000FF 0%, #000000FF 100%);
+}
+
+.star{
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  position: absolute;
+  z-index: -20;
+}
+
+@keyframes glow {
+  50% {opacity: 0.75;}
+  100% {opacity: 1;}
+}
