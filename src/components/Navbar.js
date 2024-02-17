@@ -18,7 +18,7 @@ export default function Navbar(props) {
 
             {/* <p className="name">Bassam El-Naggar</p> */}
 
-            <button className="toggle" style={{backgroundColor: props.dark ? "white" : "#21222A"}} onClick={() => props.toggleDark(props.dark)}>{`Toggle ${props.dark ? "Light" : "Dark"}`}</button>
+            <button className="toggle" style={{backgroundColor: props.dark ? "white" : "#21222A"}} onClick={() => props.toggleDark(props.dark)}>{props.dark ? "Light" : "Dark"}</button>
 
             {props.pages.map(x => <Sec page={x} dark={props.dark} change={props.change} key={x}/>)}
 

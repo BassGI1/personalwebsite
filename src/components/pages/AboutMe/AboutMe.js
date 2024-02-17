@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
+import Me from "../../../images/Me.png"
 
-const starColours = ["#BCFFFFFF", "#EBD9A5", "#FFFBCB", "#E7837D", "#FFFFFF", "#8AB7DC"]
+const starColours = ["#BCFFFFFF", "#EBD9A5", "#FFFBCB", "#E7837D", "#FFFFFF", "#8AB7DC", "#D2E1A1"]
 
 const Star = ({ colour, top, left, dimensions }) => {
     return (
@@ -14,15 +15,15 @@ export default function AboutMe({dark}){
 
     useEffect(() => {
         const div = document.getElementsByClassName("aboutme")[0]
-        for (let i = 0; i < (div.scrollHeight*div.clientWidth) / 2000; ++i){
+        for (let i = 0; i < (div.scrollHeight*div.clientWidth) / 1600; ++i){
             setStars(x => [...x, <Star colour={starColours[Math.floor(Math.random()*starColours.length)]} top={`${Math.random()*(div.scrollHeight)}px`} left={`${Math.random()*div.clientWidth}px`} dimensions={`${Math.random()*15 + 5}px`} />])
         }
     }, [])
 
     return (
-        <div className="completepage aboutme" style={{filter: dark ? "invert(0%)" : "invert(100%)"}} >
+        <div className="completepage aboutme" >
             {stars}
-
+            <img src={Me} className="image-of-me" />
         </div>
     )
 }

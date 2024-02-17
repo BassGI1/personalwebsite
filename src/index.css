@@ -275,6 +275,7 @@ nav{
 .aboutme{
   background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
   background-image: radial-gradient(39% 47% at 73% 37%, #1A1B82FF 0%, #3C529D00 100%),radial-gradient(75% 75% at 69% 42%, #D11CE061 0%, #00000017 100%),radial-gradient(76% 75% at 62% 73%, #791A53FF 0%, #00000000 100%),radial-gradient(75% 75% at 50% 50%, #000000FF 0%, #000000FF 100%);
+  filter: invert(0%);
 }
 
 .star{
@@ -285,6 +286,30 @@ nav{
 }
 
 @keyframes glow {
-  50% {opacity: 0.75;}
+  50% {opacity: 0.65;}
   100% {opacity: 1;}
+}
+
+.image-of-me{
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  border-radius: 1rem;
+  transform: translateY(0.5%);
+  animation:
+            float 2s cubic-bezier(.9,.55,.1,.45) infinite,
+            comein 1s forwards;
+}
+
+@keyframes comein {
+  0% {
+    transform: translateX(150%);
+    opacity: 0.1;
+  }
+}
+
+@keyframes float {
+  50% { transform: translateY(-0.5%); }
+  /* 100% { transform: translateY(1.5%); } */
 }
