@@ -18,6 +18,7 @@ nav{
   height: 12.5vh;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 .logo{
