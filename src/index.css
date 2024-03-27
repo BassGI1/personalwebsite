@@ -314,3 +314,50 @@ nav{
   50% { transform: translateY(-0.5%); }
   /* 100% { transform: translateY(1.5%); } */
 }
+
+.name-card{
+  z-index: 5;
+  color: #de2323;
+  width: 65%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 1.25px 1.25px #de2323;
+  cursor: default;
+  animation: changeColour1 1s infinite;
+}
+
+.info-card{
+  margin-left: 3vw;
+  margin-top: 2vh;
+  width: 60%;
+  line-height: 5vh;
+  text-align: center;
+  text-shadow: .75px .75px #de2323;
+  color: #de2323;
+  animation: changeColour2 1s infinite;
+}
+
+@keyframes changeColour1{
+  100%{
+    text-shadow: 1.25px 1.25px #de2323;
+    color: #de2323;
+  }
+  50%{
+    color: #ff1f1f;
+    text-shadow: 1.25px 1.25px #ff1f1f;
+  }
+}
+
+@keyframes changeColour2{
+  100%{
+    text-shadow: .75px .75px #de2323;
+    color: #de2323;
+  }
+  50%{
+    color: #ff1f1f;
+    text-shadow: .75px .75px #ff1f1f;
+  }
+}
