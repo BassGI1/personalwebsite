@@ -317,14 +317,14 @@ nav{
 
 .name-card{
   z-index: 5;
-  color: #de2323;
+  color: rgb(234, 219, 219);
   width: 65%;
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  text-shadow: 1.25px 1.25px #de2323;
+  text-shadow: 1.25px 1.25px rgb(234, 219, 219);
   cursor: default;
   animation: changeColour1 1s infinite;
 }
@@ -335,29 +335,29 @@ nav{
   width: 60%;
   line-height: 5vh;
   text-align: center;
-  text-shadow: .75px .75px #de2323;
-  color: #de2323;
+  text-shadow: .75px .75px rgb(234, 219, 219);
+  color: rgb(234, 219, 219);
   animation: changeColour2 1s infinite;
 }
 
 @keyframes changeColour1{
   100%{
-    text-shadow: 1.25px 1.25px #de2323;
-    color: #de2323;
+    text-shadow: 1.25px 1.25px rgb(234, 219, 219);
+    color: rgb(234, 219, 219);
   }
   50%{
-    color: #ff1f1f;
-    text-shadow: 1.25px 1.25px #ff1f1f;
+    color: white;
+    text-shadow: 1.25px 1.25px white;
   }
 }
 
 @keyframes changeColour2{
   100%{
-    text-shadow: .75px .75px #de2323;
-    color: #de2323;
+    text-shadow: .75px .75px rgb(234, 219, 219);
+    color: rgb(234, 219, 219);
   }
   50%{
-    color: #ff1f1f;
-    text-shadow: .75px .75px #ff1f1f;
+    color: white;
+    text-shadow: .75px .75px white;
   }
 }
