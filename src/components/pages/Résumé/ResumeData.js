@@ -2,11 +2,25 @@ const Data = [
     {
         type: 'not',
         info: {
-            term: "2B",
+            term: "3B",
             email: "basmaym148@gmail.com",
             id: "#20963633",
             phone: "519-501-9140"
         },
+    },
+    {
+        type: "job",
+        company: 'theScore',
+        title: 'Backend Software Developer (Sports API)',
+        start: 'January 2024',
+        end: 'April 2024',
+        description: [
+            "Investigated and implemented garbage collector tuning for the ruby runtime that improved latency by >10% across the entire application",
+            "Created an abstraction layer across the application that allows for instant switching between cloud service providers",
+            "Optimized database queries that improved latency by >7% across several important endpoints",
+            "Wrote several GraphQL queries for improved performance",
+            "Bug fixes"
+        ]
     },
     {
         type: "job",
@@ -44,7 +58,7 @@ const Data = [
             "Wrote and deployed multiple web scrapers which greatly improved efficiency of the Data team",
             "Migrated data from previous database to new PostgreSQL database",
             "Wrote several unit tests, increasing code coverage by over 20%",
-            " Automated several background tasks, greatly reducing workload of the Data team"
+            "Automated several background tasks, greatly reducing workload of the Data team"
         ]
     },
     {
