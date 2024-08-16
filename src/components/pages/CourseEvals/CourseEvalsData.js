@@ -518,6 +518,45 @@ const Data = [
 			},
 		],
 	],
+	[
+		"3A",
+		"This was the easiest term of my university career so far. It seemed like the previous courses had allowed me to have an intuition for this term's courses. I finally got to pick an elective! I chose Psych 207.",
+		{
+			title: "Psych 207",
+			rating: 0.8,
+			about: "Cognitive Processes",
+			experience:
+				"My first elective! I wanted to get one of natural science requirements out of the way early so I took this course. This turned out to be a very interesting course!",
+		},
+		{
+			title: "ECE 318",
+			rating: 0.4,
+			about: "Communication Systems",
+			experience:
+				"This course made me hate the Sine and Cosine functions. There was just too much math in this course, and I found myself memorizing problems instead of understanding them. The content was just too fast-paced for me to build any sort of intuition for anything in the course. Moreover, the content in this course wasn't particularly interesting for me, so I struggled with this course. The professor was excellent though.",
+		},
+		{
+			title: "ECE 327",
+			rating: 0.9,
+			about: "Digital Hardware Systems",
+			experience:
+				"Awesome course. I genuinely enjoy writing Verilog code. This course seemed like a gateway into some of the core courses of computer engineering. This is something I would love to work in in the future.",
+		},
+		{
+			title: "ECE 350",
+			rating: 0.8,
+			about: "Real Time Operating Systems",
+			experience:
+				"Was a very interesting course detailing the implementations of several concepts that we had learned in previous courses (i.e. implementation of mutexes and semaphores). The lab for this course was to build a fully functioning operating system on an STM32 Nucleoboard. Surprisingly, I found much of this course intuitive.",
+		},
+		{
+			title: "ECE 380",
+			rating: 0.8,
+			about: "Analog Control Systems",
+			experience:
+				"I felt like this course had little content in it, so it felt somewhat simple. That being said, the content was very interesting. It was incredible to watch the mathematics we had been learning for several courses being expressed physically in some controllers.",
+		},
+	],
 ]
 
 export default Data
