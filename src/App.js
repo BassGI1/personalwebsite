@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react"
 
 import Constants from "./utils/Constants.js"
 import TypedText from "./components/TypedText.js"
-import Waterfall from "./components/Waterfall.js"
+import CommandLine from "./components/CommandLine.js"
 
 export default function App() {
 	const background = useRef(null)
+    const [page, setPage] = useState("")
 	useEffect(() => {
 		background.current = document.getElementById(
 			"radial-gradient-dragging-main-content"
@@ -23,7 +24,14 @@ export default function App() {
 			id="radial-gradient-dragging-main-content"
 			style={{ backgroundColor: Constants.theme.background }}
 		>
-			<div style={{ width: "100%", height: "100%", zIndex: 1 , position:"relative"}}>
+			<div
+				style={{
+					width: "100%",
+					height: "100%",
+					zIndex: 1,
+					position: "relative",
+				}}
+			>
 				<TypedText
 					text="Bassam El-Naggar"
 					fontSize="2rem"
@@ -31,7 +39,7 @@ export default function App() {
 					color={Constants.theme.headerColor}
 				/>
 			</div>
-			<Waterfall />
+			<CommandLine page={page} setPage={setPage} />
 		</main>
 	)
 }
