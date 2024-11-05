@@ -1,46 +1,37 @@
-import React, {useState} from "react";
-import Navbar from "./components/Navbar";
-import CourseEvals from "./components/pages/CourseEvals/CourseEvals.js";
-import Home from "./components/pages/Home/Home.js";
-import Videos from "./components/pages/Home/Videos.js";
-import Resume from "./components/pages/Résumé/Resume.js";
-import Projects from "./components/pages/Projects/Projects.js";
-import AboutMe from "./components/pages/AboutMe/AboutMe.js";
+import { useEffect, useRef, useState } from "react"
+
+import Constants from "./utils/Constants.js"
+import TypedText from "./components/TypedText.js"
+import Waterfall from "./components/Waterfall.js"
 
 export default function App() {
+	const background = useRef(null)
+	useEffect(() => {
+		background.current = document.getElementById(
+			"radial-gradient-dragging-main-content"
+		)
+		window.addEventListener(
+			"mousemove",
+			(e) =>
+				(background.current.style.backgroundImage = `radial-gradient( circle at ${e.clientX}px ${e.clientY}px, ${Constants.theme.backgroundRadial} 1vw, ${Constants.theme.background} 50vw )`)
+		)
+	}, [])
 
-    const [dark, setDark] = useState(() => true)
-    const pages = ['Home', 'Resume', 'Projects', 'About Me', 'University Experience']
-    const [page, setPage] = useState('Home')
-
-    //dark is used to determine whether the page should be rendered in dark mode or not
-    //pages contains all the possible pages listed in the navbar
-    //page is used to tell the app which page should currently be rendered
-
-    function toggleDark() {
-        setDark(x => !x)
-    }
-
-    return (
-
-        <div>
-
-            <Navbar toggleDark={toggleDark} dark={dark} pages={pages} page={page} change={setPage}/>
-
-            {page === 'University Experience' && <CourseEvals dark={dark}/>}
-
-            {page === 'Home' && <Home dark={dark} setPage={setPage}/>}
-
-            {page === 'Vids' && <Videos dark={dark} />}
-
-            {page === 'Resume' && <Resume dark={dark} />}
-
-            {page === 'Projects' && <Projects dark={dark} />}
-
-            {page === 'About Me' && <AboutMe dark={dark} />}
-
-        </div>
-
-    )
-  
+	return (
+		<main
+			className="main-content"
+			id="radial-gradient-dragging-main-content"
+			style={{ backgroundColor: Constants.theme.background }}
+		>
+			<div style={{ width: "100%", height: "100%", zIndex: 1 , position:"relative"}}>
+				<TypedText
+					text="Bassam El-Naggar"
+					fontSize="2rem"
+					timeRange={300}
+					color={Constants.theme.headerColor}
+				/>
+			</div>
+			<Waterfall />
+		</main>
+	)
 }
