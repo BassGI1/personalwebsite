@@ -1,0 +1,13 @@
+.card {
+	border-radius: 1rem;
+	background-image: linear-gradient(to right bottom, #1f2937, #0b0b2b);
+}
+
+.about-me-top-card {
+	width: 95%;
+	height: 50%;
+}
+
+/* @media (max-width: 768px){
+
+} */
