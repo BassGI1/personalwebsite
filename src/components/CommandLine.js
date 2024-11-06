@@ -8,16 +8,32 @@ cd — change the working directory (use this to view different pages)
 clear — clear the terminal screen
 pwd — print name of current/working directory
 whoami — print effective userid
-exit — end the application`,
+exit — end the application
+cat — concatenate files and print on the standard output
+echo — display a line of text`,
 	ls: `/AboutMe
 /Resume
-/Projects`,
+/Projects
+/Videos
+README.md`,
 	clear: " ",
 	pwd: "C:/Desktop/bassamelnaggar",
 	whoami: "Bassam El-Naggar",
+	"cat README.md": `Bassam El-Naggar - Personal Website V2.0
+
+Created and written by Bassam El-Naggar using React.
+Source code found at https://github.com/BassGI1/personalwebsite.
+Contact me at basmaym148@gmail.com.`,
+	"vim README.md": `Bassam El-Naggar - Personal Website V2.0
+
+Created and written by Bassam El-Naggar using React.
+Source code found at https://github.com/BassGI1/personalwebsite.
+Contact me at basmaym148@gmail.com.`,
 }
 
+const echoRegex = /echo\s/g
 const cdRegex = /cd\s/g
+
 const pages = new Set()
 pages.add("AboutMe")
 pages.add("Resume")
@@ -97,6 +113,12 @@ export default function CommandLine({ page, setPage }) {
 									setCurrentOutput(
 										`Command '${currentCommand}' not found`
 									)
+							} else if (currentCommand.match(echoRegex)) {
+								const temp = currentCommand.replace(
+									currentCommand.match(echoRegex)[0],
+									""
+								)
+								setCurrentOutput(temp)
 							} else
 								setCurrentOutput(
 									commands[currentCommand]

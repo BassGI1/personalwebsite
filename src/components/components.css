@@ -1,9 +1,9 @@
 .commandline-background-div {
 	height: 2rem;
-	width: 95%;
+	width: 97.5%;
 	position: absolute;
 	bottom: 1rem;
-	left: 2.5%;
+	left: 1.25%;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
@@ -22,7 +22,6 @@
 	color: white;
 	margin: 1rem;
 	font-weight: 400;
-	cursor: pointer;
 	height: 100%;
 	width: calc(100% - 2rem);
 	word-break: break-all;
@@ -56,8 +55,77 @@
 	border-color: transparent;
 	flex: 1;
 	margin-right: 1rem;
+	cursor: text;
 }
 
 .commandline-bottom-div input:focus {
 	outline: none;
+}
+
+.background {
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.background-random-object {
+	position: absolute;
+	background-color: white;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50rem;
+	display: inline-block;
+}
+
+.navbar-nav {
+	width: 100%;
+	height: 3.5rem;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	z-index: 3;
+	position: relative;
+}
+
+.navbar-selector-wrapper {
+	height: 100%;
+	width: 60%;
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-page {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-family: "Graphik";
+	transition: all 0.35s ease;
+	font-size: 1.1rem;
+	color: white;
+	text-align: center;
+}
+
+.navbar-page:hover {
+	color: #296dc9;
+	font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+	.navbar-nav {
+		height: 7rem;
+	}
+
+	.navbar-selector-wrapper {
+		width: 100%;
+	}
 }

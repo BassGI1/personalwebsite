@@ -1,12 +1,16 @@
 import { useEffect, useRef, useState } from "react"
 
+import Home from "./pages/Home/Home.js"
+import AboutMe from "./pages/AboutMe/AboutMe.js"
+
+import Navbar from "./components/Navbar.js"
 import Constants from "./utils/Constants.js"
-import TypedText from "./components/TypedText.js"
+import Background from "./components/Background.js"
 import CommandLine from "./components/CommandLine.js"
 
 export default function App() {
 	const background = useRef(null)
-    const [page, setPage] = useState("")
+	const [page, setPage] = useState("")
 	useEffect(() => {
 		background.current = document.getElementById(
 			"radial-gradient-dragging-main-content"
@@ -24,22 +28,11 @@ export default function App() {
 			id="radial-gradient-dragging-main-content"
 			style={{ backgroundColor: Constants.theme.background }}
 		>
-			<div
-				style={{
-					width: "100%",
-					height: "100%",
-					zIndex: 1,
-					position: "relative",
-				}}
-			>
-				<TypedText
-					text="Bassam El-Naggar"
-					fontSize="2rem"
-					timeRange={300}
-					color={Constants.theme.headerColor}
-				/>
-			</div>
+			<Navbar setPage={setPage} />
+			{page === "" ? <Home /> : ""}
+			{page === "AboutMe" ? <AboutMe /> : ""}
 			<CommandLine page={page} setPage={setPage} />
+			<Background />
 		</main>
 	)
 }
