@@ -11,7 +11,7 @@ export default function Background() {
 
 	useEffect(() => {
 		const x = []
-		for (let i = 0; i < 1000; ++i) {
+		for (let i = 0; i < 750; ++i) {
 			x.push({
 				left: Math.random() * 98 + 1,
 				top: Math.random() * 98 + 1,
@@ -34,7 +34,7 @@ export default function Background() {
 						(point.top * window.innerHeight) / 100,
 						e.clientX,
 						e.clientY
-					) < 50
+					) < 40
 				) {
 					point.left =
 						(100 *

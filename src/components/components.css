@@ -15,6 +15,7 @@
 	height: 10rem;
 	background-color: black;
 	border-radius: 1rem;
+	overflow-y: auto;
 }
 
 .commandline-top-div h5 {
@@ -22,10 +23,12 @@
 	color: white;
 	margin: 1rem;
 	font-weight: 400;
-	height: 100%;
+	height: fit-content;
 	width: calc(100% - 2rem);
 	word-break: break-all;
 	white-space: pre;
+	word-wrap: break-word;
+	line-break: anywhere;
 }
 
 .commandline-bottom-div {
@@ -89,7 +92,7 @@
 	justify-content: center;
 	flex-direction: row;
 	z-index: 3;
-	position: relative;
+	position: absolute;
 }
 
 .navbar-selector-wrapper {
@@ -118,6 +121,81 @@
 .navbar-page:hover {
 	color: #296dc9;
 	font-size: 1.25rem;
+}
+
+.language-card-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: visible;
+	padding: 1rem;
+	border-radius: 1rem;
+	transition: background-color 0.5s;
+}
+
+.language-card-background:hover {
+	background-color: black;
+}
+
+.language-card-background img {
+	width: 3rem;
+	height: 3rem;
+	filter: grayscale(1);
+	transition: filter 0.5s;
+	cursor: pointer;
+}
+
+.language-card-background img:hover {
+	filter: grayscale(0);
+}
+
+.language-card-hovering-text {
+	padding: 0.1rem 0.2rem;
+	position: absolute;
+	left: 4rem;
+	font-family: "Graphik";
+	color: white;
+	z-index: 5;
+	width: fit-content;
+	white-space: nowrap;
+	cursor: default;
+	background-color: black;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	font-size: 1.25rem;
+}
+
+.textfile-background-div {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	left: 0px;
+	top: 0px;
+	background-color: white;
+	color: black;
+	z-index: 10;
+	white-space: pre;
+	padding: 1rem;
+	font-family: "Consolas";
+	overflow: auto;
+	font-size: 0.75rem;
+}
+
+.textfile-close {
+	height: 3rem;
+	width: 100%;
+}
+
+.textfile-close img {
+	aspect-ratio: 1 / 1;
+	height: 50%;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+.textfile-close img:hover {
+	opacity: 1;
 }
 
 @media (max-width: 768px) {

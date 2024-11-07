@@ -1,16 +1,20 @@
 import { useEffect, useRef, useState } from "react"
 
 import Home from "./pages/Home/Home.js"
+import Resume from "./pages/Resume/Resume.js"
 import AboutMe from "./pages/AboutMe/AboutMe.js"
 
 import Navbar from "./components/Navbar.js"
 import Constants from "./utils/Constants.js"
 import Background from "./components/Background.js"
 import CommandLine from "./components/CommandLine.js"
+import TextFile from "./components/TextFile.js"
 
 export default function App() {
 	const background = useRef(null)
 	const [page, setPage] = useState("")
+	const [renderTextFile, setRenderTextFile] = useState("")
+
 	useEffect(() => {
 		background.current = document.getElementById(
 			"radial-gradient-dragging-main-content"
@@ -19,6 +23,10 @@ export default function App() {
 			"mousemove",
 			(e) =>
 				(background.current.style.backgroundImage = `radial-gradient( circle at ${e.clientX}px ${e.clientY}px, ${Constants.theme.backgroundRadial} 1vw, ${Constants.theme.background} 50vw )`)
+		)
+		document.body.addEventListener(
+			"mouseleave",
+			(e) => (background.current.style.backgroundImage = "none")
 		)
 	}, [])
 
@@ -31,8 +39,17 @@ export default function App() {
 			<Navbar setPage={setPage} />
 			{page === "" ? <Home /> : ""}
 			{page === "AboutMe" ? <AboutMe /> : ""}
-			<CommandLine page={page} setPage={setPage} />
+			{page === "Resume" ? <Resume /> : ""}
+			<CommandLine page={page} setPage={setPage} setRenderTextFile={setRenderTextFile} />
 			<Background />
+			{renderTextFile.length ? (
+				<TextFile
+					text={renderTextFile}
+					close={() => setRenderTextFile("")}
+				/>
+			) : (
+				""
+			)}
 		</main>
 	)
 }

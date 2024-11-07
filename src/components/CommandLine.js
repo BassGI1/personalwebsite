@@ -1,5 +1,9 @@
 import { useRef, useState } from "react"
 
+import Coop from "../data/Coop.js"
+import University from "../data/University.js"
+import DO_NOT_OPEN from "../data/DoNotOpen.js"
+
 import "./components.css"
 
 const commands = {
@@ -9,13 +13,17 @@ clear — clear the terminal screen
 pwd — print name of current/working directory
 whoami — print effective userid
 exit — end the application
-cat — concatenate files and print on the standard output
-echo — display a line of text`,
+cat — concatenate files and print on the standard output (cannot create new files)
+echo — display a line of text
+open — open a text file in a new tab`,
 	ls: `/AboutMe
 /Resume
 /Projects
 /Videos
-README.md`,
+README.md
+DO_NOT_OPEN.txt
+Coop.txt
+University.txt`,
 	clear: " ",
 	pwd: "C:/Desktop/bassamelnaggar",
 	whoami: "Bassam El-Naggar",
@@ -29,6 +37,18 @@ Contact me at basmaym148@gmail.com.`,
 Created and written by Bassam El-Naggar using React.
 Source code found at https://github.com/BassGI1/personalwebsite.
 Contact me at basmaym148@gmail.com.`,
+	"cat Coop.txt": Coop,
+	"vim Coop.txt": Coop,
+	"cat University.txt": University,
+	"vim University.txt": University,
+}
+
+const openRegex = /open\s/g
+
+const openMap = {
+	"Coop.txt": Coop,
+	"University.txt": University,
+	"DO_NOT_OPEN.txt": DO_NOT_OPEN,
 }
 
 const echoRegex = /echo\s/g
@@ -42,7 +62,7 @@ pages.add("/AboutMe")
 pages.add("/Resume")
 pages.add("/Projects")
 
-export default function CommandLine({ page, setPage }) {
+export default function CommandLine({ page, setPage, setRenderTextFile }) {
 	const [showTop, setShowTop] = useState(false)
 
 	const commandHistoryIndex = useRef(null)
@@ -119,6 +139,21 @@ export default function CommandLine({ page, setPage }) {
 									""
 								)
 								setCurrentOutput(temp)
+							} else if (currentCommand.match(openRegex)) {
+								const string = currentCommand.replace(
+									currentCommand.match(openRegex)[0],
+									""
+								)
+								if (openMap[string] === undefined)
+									setCurrentOutput(
+										`Could not find file '${string}'`
+									)
+								else {
+									setCurrentOutput(
+										`Opening '${string}'...`
+									)
+									setRenderTextFile(openMap[string])
+								}
 							} else
 								setCurrentOutput(
 									commands[currentCommand]

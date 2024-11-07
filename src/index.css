@@ -29,13 +29,14 @@ body {
 .main-content {
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
+	overflow-y: auto;
 	z-index: -1;
 }
 
 .main-wrapper {
 	width: 100%;
-	height: calc(100% - 5rem);
+	height: calc(100% - 7rem);
+	margin-top: 3.5rem;
 	z-index: 1;
 	position: relative;
 	animation: fadein 0.35s forwards ease-in-out;
@@ -44,6 +45,7 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	overflow-y: auto;
 }
 
 @keyframes fadein {
@@ -58,6 +60,7 @@ body {
 
 @media (max-width: 768px) {
 	.main-wrapper {
-		flex-direction: column;
+		margin-top: 7rem;
+		margin-bottom: 2rem;
 	}
 }
