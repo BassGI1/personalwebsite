@@ -1,4 +1,7 @@
+import TypedText from "../../components/TypedText.js"
 import LanguageCard from "../../components/LanguageCard.js"
+
+import ResumeData from "../../data/ResumeData.js"
 
 import "./Resume.css"
 
@@ -129,7 +132,130 @@ export default function Resume() {
 				className={`resume-jobs-background-wrapper ${
 					fadeJobs ? "resume-jobs-background-fadein" : ""
 				}`}
-			></div>
+			>
+				{ResumeData.map((emp, i) => (
+					<Employment
+						companyName={emp[0]}
+						companyImage={emp[1]}
+						jobTitle={emp[2]}
+						startDate={emp[3]}
+						endDate={emp[4]}
+						location={emp[5]}
+						query={emp[6]}
+						points={emp[7]}
+						key={emp[3]}
+						rendered={fadeJobs}
+						index={i}
+					/>
+				))}
+			</div>
+		</div>
+	)
+}
+
+function Employment({
+	companyName,
+	companyImage,
+	jobTitle,
+	startDate,
+	endDate,
+	location,
+	query,
+	points,
+	rendered,
+	index,
+}) {
+	return index % 2 ? (
+		<div className="resume-employment-wrapper">
+			<div
+				className="resume-employment-section"
+				style={{
+					padding: "1rem",
+					backgroundColor: "rgba(0, 0, 0, 0.6)",
+				}}
+			>
+				<h2 className="resume-employment-job-title">{jobTitle}</h2>
+				<h3 className="resume-employment-job-title">
+					{companyName}
+				</h3>
+				<h4 className="resume-employment-job-title">
+					{startDate} — {endDate}
+				</h4>
+				<h4 className="resume-employment-job-title">{location}</h4>
+				{points.map((p, i) => (
+					<p className="resume-employment-job-title" key={i}>
+						{p}
+					</p>
+				))}
+			</div>
+			<div className="resume-employment-section">
+				<img src={companyImage} alt={companyName} />
+				{rendered ? (
+					<TypedText
+						text={query
+							.replaceAll("+", " ")
+							.split(",")
+							.join(", ")}
+						font="Graphik"
+						color="white"
+						timeRange={50}
+						minTime={0}
+					/>
+				) : (
+					""
+				)}
+				<iframe
+					referrerPolicy="no-referrer-when-downgrade"
+					src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}&q=${query}`}
+					allowFullScreen
+				/>
+			</div>
+		</div>
+	) : (
+		<div className="resume-employment-wrapper">
+			<div className="resume-employment-section">
+				<img src={companyImage} alt={companyName} />
+				{rendered ? (
+					<TypedText
+						text={query
+							.replaceAll("+", " ")
+							.split(",")
+							.join(", ")}
+						font="Graphik"
+						color="white"
+						timeRange={50}
+						minTime={0}
+					/>
+				) : (
+					""
+				)}
+				<iframe
+					referrerPolicy="no-referrer-when-downgrade"
+					src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}&q=${query}`}
+					allowFullScreen
+				/>
+			</div>
+			<div
+				className="resume-employment-section"
+				style={{
+					padding: "1rem",
+					backgroundColor: "rgba(0, 0, 0, 0.6)",
+				}}
+			>
+				<h2 className="resume-employment-job-title">{jobTitle}</h2>
+				<h3 className="resume-employment-job-title">
+					{companyName}
+				</h3>
+				<h4 className="resume-employment-job-title">
+					{startDate} — {endDate}
+				</h4>
+				<h4 className="resume-employment-job-title">{location}</h4>
+				{points.map((p, i) => (
+					<p className="resume-employment-job-title" key={i}>
+						{p}
+					</p>
+				))}
+			</div>
 		</div>
 	)
 }

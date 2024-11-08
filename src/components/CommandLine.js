@@ -108,9 +108,7 @@ export default function CommandLine({ page, setPage, setRenderTextFile }) {
 							commandHistoryIndex.current = null
 							setShowTop(true)
 							if (currentCommand === "exit")
-								window.location.assign(
-									"https://google.com"
-								)
+								window.close()
 							else if (currentCommand.match(cdRegex)) {
 								const temp = currentCommand.replace(
 									currentCommand.match(cdRegex)[0],

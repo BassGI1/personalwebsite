@@ -1,10 +1,11 @@
 .home-left-divider {
-	height: 6rem;
+	height: 10rem;
 	width: 60%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
+	overflow: visible;
 }
 
 .home-right-divider {
@@ -20,10 +21,21 @@
 	border-radius: 1rem;
 }
 
+.home-left-divider img {
+	aspect-ratio: 1 / 1;
+	height: 2rem;
+	cursor: pointer;
+	transition: all 0.125s;
+}
+
+.home-left-divider img:hover {
+	transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
 	.home-left-divider {
 		width: 100%;
-		height: 35%;
+		height: 40%;
 		flex-direction: column;
 		display: flex;
 		justify-content: space-evenly;
@@ -32,11 +44,11 @@
 	}
 	.home-right-divider {
 		width: 100%;
-		height: 50%;
+		height: 60%;
 		padding: 0px;
 	}
 
-	.home-right-divider img{
+	.home-right-divider img {
 		height: 50%;
 	}
 }

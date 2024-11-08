@@ -192,6 +192,7 @@
 	height: 50%;
 	opacity: 0.4;
 	cursor: pointer;
+	transition: opacity 0.15s;
 }
 
 .textfile-close img:hover {
