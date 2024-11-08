@@ -1,5 +1,8 @@
+import { useState, useEffect, useRef } from "react"
+
 import TypedText from "../../components/TypedText.js"
 import LanguageCard from "../../components/LanguageCard.js"
+import FilledCircle from "../../components/FilledCircle.js"
 
 import ResumeData from "../../data/ResumeData.js"
 
@@ -39,7 +42,6 @@ import Docker from "../../assets/technologies/tools/Docker.png"
 import GCP from "../../assets/technologies/tools/GCP.png"
 import Git from "../../assets/technologies/tools/Git.png"
 import Linux from "../../assets/technologies/tools/Linux.png"
-import { useEffect, useState } from "react"
 
 const languages = [
 	[JavaScript, "JavaScript"],
@@ -80,23 +82,37 @@ const tools = [
 ]
 
 export default function Resume() {
-	const [fadeJobs, SetFadeJobs] = useState(false)
+	const [jobShowingArr, setJobShowingArr] = useState(
+		new Array(ResumeData.length).fill(false)
+	)
+	const showThresholds = useRef([])
 
 	useEffect(() => {
+		showThresholds.current.push(
+			[...document.getElementsByClassName("resume-technology-div")]
+				.map((x) => x.scrollHeight)
+				.reduce((a, b) => a + b) * 1.15
+		)
+		for (let i = 1; i < ResumeData.length; ++i)
+			showThresholds.current.push(
+				showThresholds.current[showThresholds.current.length - 1] +
+					document.getElementById(ResumeData[i][3])
+						.scrollHeight *
+						1.15
+			)
+
 		document
 			.getElementById("resume-wrapper")
 			.addEventListener("scroll", (e) => {
-				if (
-					e.target.scrollTop + e.target.offsetHeight >=
-					[
-						...document.getElementsByClassName(
-							"resume-technology-div"
-						),
-					]
-						.map((x) => x.scrollHeight)
-						.reduce((a, b) => a + b)
-				)
-					SetFadeJobs(true)
+				const temp = [...jobShowingArr]
+				for (let i = 0; i < temp.length; ++i) {
+					if (
+						e.target.scrollTop + e.target.offsetHeight >=
+						showThresholds.current[i]
+					)
+						temp[i] = true
+				}
+				setJobShowingArr(temp)
 			})
 	}, [])
 
@@ -128,11 +144,7 @@ export default function Resume() {
 					<LanguageCard src={l[0]} text={l[1]} key={l[1]} />
 				))}
 			</div>
-			<div
-				className={`resume-jobs-background-wrapper ${
-					fadeJobs ? "resume-jobs-background-fadein" : ""
-				}`}
-			>
+			<div className="resume-jobs-background-wrapper">
 				{ResumeData.map((emp, i) => (
 					<Employment
 						companyName={emp[0]}
@@ -144,8 +156,8 @@ export default function Resume() {
 						query={emp[6]}
 						points={emp[7]}
 						key={emp[3]}
-						rendered={fadeJobs}
 						index={i}
+						fadeIn={jobShowingArr[i]}
 					/>
 				))}
 			</div>
@@ -162,11 +174,16 @@ function Employment({
 	location,
 	query,
 	points,
-	rendered,
 	index,
+	fadeIn,
 }) {
 	return index % 2 ? (
-		<div className="resume-employment-wrapper">
+		<div
+			className={`resume-employment-wrapper ${
+				fadeIn ? "resume-jobs-background-fadein" : ""
+			}`}
+			id={startDate}
+		>
 			<div
 				className="resume-employment-section"
 				style={{
@@ -190,7 +207,7 @@ function Employment({
 			</div>
 			<div className="resume-employment-section">
 				<img src={companyImage} alt={companyName} />
-				{rendered ? (
+				{fadeIn ? (
 					<TypedText
 						text={query
 							.replaceAll("+", " ")
@@ -212,10 +229,23 @@ function Employment({
 			</div>
 		</div>
 	) : (
-		<div className="resume-employment-wrapper">
+		<div
+			className={`resume-employment-wrapper ${
+				fadeIn ? "resume-jobs-background-fadein" : ""
+			}`}
+			id={startDate}
+		>
+			{fadeIn ? (
+				<FilledCircle
+					diameter="3rem"
+					className="resume-employment-filled-circle"
+				/>
+			) : (
+				""
+			)}
 			<div className="resume-employment-section">
 				<img src={companyImage} alt={companyName} />
-				{rendered ? (
+				{fadeIn ? (
 					<TypedText
 						text={query
 							.replaceAll("+", " ")

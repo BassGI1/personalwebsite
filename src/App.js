@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import Home from "./pages/Home/Home.js"
 import Resume from "./pages/Resume/Resume.js"
 import AboutMe from "./pages/AboutMe/AboutMe.js"
+import Projects from "./pages/Projects/Projects.js"
 
 import Navbar from "./components/Navbar.js"
 import Constants from "./utils/Constants.js"
@@ -40,7 +41,12 @@ export default function App() {
 			{page === "" ? <Home /> : ""}
 			{page === "AboutMe" ? <AboutMe /> : ""}
 			{page === "Resume" ? <Resume /> : ""}
-			<CommandLine page={page} setPage={setPage} setRenderTextFile={setRenderTextFile} />
+			{page === "Projects" ? <Projects /> : ""}
+			<CommandLine
+				page={page}
+				setPage={setPage}
+				setRenderTextFile={setRenderTextFile}
+			/>
 			<Background />
 			{renderTextFile.length ? (
 				<TextFile

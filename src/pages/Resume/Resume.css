@@ -17,7 +17,6 @@
 
 .resume-jobs-background-wrapper {
 	width: calc(100% - 1rem);
-	opacity: 0;
 	margin-bottom: 1rem;
 }
 
@@ -33,6 +32,7 @@
 	align-items: center;
 	justify-content: space-evenly;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .resume-employment-section {
@@ -70,6 +70,12 @@
 	margin: 0.5rem;
 }
 
+.resume-employment-filled-circle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
 @media (max-width: 768px) {
 	.resume-employment-wrapper {
 		flex-direction: column;
@@ -77,5 +83,9 @@
 
 	.resume-employment-section {
 		width: 100%;
+	}
+
+	.resume-employment-filled-circle {
+		display: none;
 	}
 }

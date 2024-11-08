@@ -175,16 +175,18 @@
 	background-color: white;
 	color: black;
 	z-index: 10;
-	white-space: pre;
-	padding: 1rem;
+	white-space: pre-line;
 	font-family: "Consolas";
 	overflow: auto;
-	font-size: 0.75rem;
+	font-size: 1rem;
 }
 
 .textfile-close {
 	height: 3rem;
-	width: 100%;
+	width: calc(100% - 1rem);
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
 }
 
 .textfile-close img {
@@ -197,6 +199,29 @@
 
 .textfile-close img:hover {
 	opacity: 1;
+}
+
+.filled-circle-outer-circle {
+	border-radius: 500rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filled-circle-inner-circle {
+	border-radius: 500rem;
+	animation: inner-circle-grow 1s forwards cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+
+@keyframes inner-circle-grow {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @media (max-width: 768px) {
