@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 
 import "./components.css"
 
+import Constants from "../utils/Constants.js"
+
 export default function Background() {
 	const [objects, setObjects] = useState([])
 
@@ -87,6 +89,7 @@ const RandomObject = ({ left, top, width, opacity }) => {
 				width: `${width}rem`,
 				height: `${width}rem`,
 				opacity: opacity,
+				backgroundColor: Constants.theme.starColour,
 			}}
 		></div>
 	)

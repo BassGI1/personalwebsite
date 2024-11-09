@@ -76,7 +76,6 @@
 
 .background-random-object {
 	position: absolute;
-	background-color: white;
 	width: 0.5rem;
 	height: 0.5rem;
 	border-radius: 50rem;
@@ -210,7 +209,7 @@
 
 .filled-circle-inner-circle {
 	border-radius: 500rem;
-	animation: inner-circle-grow 1s forwards cubic-bezier(0.2, 0.7, 0.1, 1);
+	animation: inner-circle-grow 0.75s forwards cubic-bezier(0.2, 0.7, 0.1, 1);
 }
 
 @keyframes inner-circle-grow {

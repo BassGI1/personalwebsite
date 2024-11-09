@@ -4,6 +4,7 @@ import TypedText from "../../components/TypedText.js"
 import LanguageCard from "../../components/LanguageCard.js"
 import FilledCircle from "../../components/FilledCircle.js"
 
+import Constants from "../../utils/Constants.js"
 import ResumeData from "../../data/ResumeData.js"
 
 import "./Resume.css"
@@ -91,14 +92,14 @@ export default function Resume() {
 		showThresholds.current.push(
 			[...document.getElementsByClassName("resume-technology-div")]
 				.map((x) => x.scrollHeight)
-				.reduce((a, b) => a + b) * 1.15
+				.reduce((a, b) => a + b) + 100
 		)
 		for (let i = 1; i < ResumeData.length; ++i)
 			showThresholds.current.push(
 				showThresholds.current[showThresholds.current.length - 1] +
 					document.getElementById(ResumeData[i][3])
-						.scrollHeight *
-						1.15
+						.scrollHeight +
+					100
 			)
 
 		document
@@ -160,6 +161,17 @@ export default function Resume() {
 						fadeIn={jobShowingArr[i]}
 					/>
 				))}
+				{jobShowingArr[jobShowingArr.length - 1] ? (
+					<FilledCircle
+						diameter="3rem"
+						className="resume-employment-filled-circle-end"
+						outlineWidth="0.25rem"
+						innerColour={Constants.theme.secondaryColour}
+						outerColour={Constants.theme.secondaryColour}
+					/>
+				) : (
+					""
+				)}
 			</div>
 		</div>
 	)
@@ -179,11 +191,22 @@ function Employment({
 }) {
 	return index % 2 ? (
 		<div
-			className={`resume-employment-wrapper ${
-				fadeIn ? "resume-jobs-background-fadein" : ""
-			}`}
+			className="resume-employment-wrapper"
 			id={startDate}
+			style={{ opacity: !fadeIn ? 0 : 1 }}
 		>
+			{fadeIn ? <Line /> : ""}
+			{fadeIn ? (
+				<FilledCircle
+					diameter="3rem"
+					className="resume-employment-filled-circle"
+					outlineWidth="0.25rem"
+					innerColour={Constants.theme.secondaryColour}
+					outerColour={Constants.theme.secondaryColour}
+				/>
+			) : (
+				""
+			)}
 			<div
 				className="resume-employment-section"
 				style={{
@@ -230,15 +253,18 @@ function Employment({
 		</div>
 	) : (
 		<div
-			className={`resume-employment-wrapper ${
-				fadeIn ? "resume-jobs-background-fadein" : ""
-			}`}
+			className="resume-employment-wrapper"
 			id={startDate}
+			style={{ opacity: !fadeIn ? 0 : 1 }}
 		>
+			{fadeIn ? <Line /> : ""}
 			{fadeIn ? (
 				<FilledCircle
 					diameter="3rem"
 					className="resume-employment-filled-circle"
+					outlineWidth="0.25rem"
+					innerColour={Constants.theme.secondaryColour}
+					outerColour={Constants.theme.secondaryColour}
 				/>
 			) : (
 				""
@@ -288,4 +314,8 @@ function Employment({
 			</div>
 		</div>
 	)
+}
+
+const Line = () => {
+	return <div className="resume-employment-dropping-line"></div>
 }

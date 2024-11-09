@@ -4,6 +4,8 @@ const Constants = {
 		backgroundRadial: "#162b55",
 		headerColor: "white",
 		hoverColor: "#296dc9",
+		starColour: "white",
+		secondaryColour: "#645cff"
 	},
 }
 
