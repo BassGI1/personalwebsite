@@ -8,6 +8,33 @@
 	margin-bottom: 1rem;
 }
 
+.resume-bordering-div {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	border-radius: 1rem;
+	padding: 1rem;
+	transition: transform 0.25s;
+}
+
+.resume-bordering-div:hover{
+	transform: scale(1.05);
+}
+
+.resume-bordering-div img {
+	height: 1.25rem;
+}
+
+.resume-bordering-div a {
+	text-decoration: none;
+	color: white;
+	margin-left: 1rem;
+	font-size: 1.25rem;
+	font-family: "Graphik";
+}
+
 .resume-technology-div h2 {
 	font-family: "Graphik";
 	color: white;
@@ -79,7 +106,7 @@
 	top: 1rem;
 }
 
-.resume-employment-filled-circle-end{
+.resume-employment-filled-circle-end {
 	position: absolute;
 	left: calc(50% - 1.7rem);
 	bottom: -2rem;
@@ -103,6 +130,9 @@
 	}
 }
 
+.resume-top-bar-div {
+}
+
 @media (max-width: 768px) {
 	.resume-employment-wrapper {
 		flex-direction: column;
@@ -120,7 +150,7 @@
 		display: none;
 	}
 
-	.resume-employment-filled-circle-end{
+	.resume-employment-filled-circle-end {
 		display: none;
 	}
 }

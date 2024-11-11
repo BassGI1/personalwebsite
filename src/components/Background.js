@@ -90,6 +90,7 @@ const RandomObject = ({ left, top, width, opacity }) => {
 				height: `${width}rem`,
 				opacity: opacity,
 				backgroundColor: Constants.theme.starColour,
+				transition: "all 0.1s"
 			}}
 		></div>
 	)

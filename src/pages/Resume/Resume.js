@@ -9,6 +9,10 @@ import ResumeData from "../../data/ResumeData.js"
 
 import "./Resume.css"
 
+import ResumePDF from "../../assets/Resume.pdf"
+import Email from "../../assets/images/Email.png"
+import PDF from "../../assets/images/ResumePDF.png"
+
 // languages
 import C from "../../assets/technologies/languages/C.png"
 import Cpp from "../../assets/technologies/languages/C++.png"
@@ -127,6 +131,28 @@ export default function Resume() {
 				padding: "0.5rem",
 			}}
 		>
+			<div
+				className="resume-technology-div"
+				style={{
+					backgroundColor: "transparent",
+					width: "100%",
+					justifyContent: "space-evenly",
+					overflow: "visible",
+				}}
+			>
+				<div className="resume-bordering-div">
+					<img src={Email} alt="Email" />
+					<a href="mailto:basmaym148@gmail.com">
+						basmaym148@gmail.com
+					</a>
+				</div>
+				<div className="resume-bordering-div">
+					<img src={PDF} alt="Resume" />
+					<a href={ResumePDF} without rel="noopener noreferrer" target="_blank">
+						Resume (PDF)
+					</a>
+				</div>
+			</div>
 			<div className="resume-technology-div">
 				<h2>Languages I've Used</h2>
 				{languages.map((l) => (
