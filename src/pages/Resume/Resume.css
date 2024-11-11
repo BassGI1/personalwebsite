@@ -130,9 +130,6 @@
 	}
 }
 
-.resume-top-bar-div {
-}
-
 @media (max-width: 768px) {
 	.resume-employment-wrapper {
 		flex-direction: column;
