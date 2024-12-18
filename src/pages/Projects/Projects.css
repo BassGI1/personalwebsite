@@ -1,0 +1,30 @@
+.projects-project-div {
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 1rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	justify-content: center;
+	width: calc(40% - 2rem);
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 1rem;
+	height: 12.5rem;
+	transform-style: preserve-3d;
+	justify-content: space-between;
+}
+
+.projects-project-div img {
+	width: 40%;
+	object-fit: contain;
+}
+
+.projects-project-right-div {
+	height: 100%;
+	width: 50%;
+}
+
+@media (max-width: 768px) {
+	.projects-project-div {
+		width: 90%;
+	}
+}

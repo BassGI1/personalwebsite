@@ -58,9 +58,11 @@ const pages = new Set()
 pages.add("AboutMe")
 pages.add("Resume")
 pages.add("Projects")
+pages.add("Videos")
 pages.add("/AboutMe")
 pages.add("/Resume")
 pages.add("/Projects")
+pages.add("/Videos")
 
 export default function CommandLine({ page, setPage, setRenderTextFile }) {
 	const [showTop, setShowTop] = useState(false)

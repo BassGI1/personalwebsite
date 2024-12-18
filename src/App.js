@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 
 import Home from "./pages/Home/Home.js"
 import Resume from "./pages/Resume/Resume.js"
+import Videos from "./pages/Videos/Videos.js"
 import AboutMe from "./pages/AboutMe/AboutMe.js"
 import Projects from "./pages/Projects/Projects.js"
 
@@ -42,6 +43,7 @@ export default function App() {
 			{page === "AboutMe" ? <AboutMe /> : ""}
 			{page === "Resume" ? <Resume /> : ""}
 			{page === "Projects" ? <Projects /> : ""}
+			{page === "Videos" ? <Videos /> : ""}
 			<CommandLine
 				page={page}
 				setPage={setPage}
