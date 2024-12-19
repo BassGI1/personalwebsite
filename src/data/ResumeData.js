@@ -11,7 +11,7 @@ const ResumeData = [
 		"January 2025",
 		"Current",
 		"Emeryville, California, United States",
-		"1900+Powell+Street,California,United+States",
+		"Emeryville,California,United+States",
 		[],
 	],
 	[
@@ -21,7 +21,7 @@ const ResumeData = [
 		"January 2024",
 		"April 2024",
 		"Toronto, Ontario, Canada",
-		"125+Queens+Quay+East,Toronto,Canada",
+		"Toronto,Ontario,Canada",
 		[
 			"Investigated and implemented garbage collector tuning for the Ruby On Rails runtime that decreased latency by >10% on >100 M daily requests.",
 			"Created an abstraction layer that integrated Google Cloud and allowed instantaneous switching between Google Cloud and AWS.",

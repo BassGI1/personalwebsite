@@ -32,6 +32,14 @@ export default function App() {
 		)
 	}, [])
 
+	useEffect(() => {
+		;(async function () {
+			fetch(`${process.env.REACT_APP_API_URI}/metrics`, {
+				method: "POST",
+			})
+		})()
+	}, [])
+
 	return (
 		<main
 			className="main-content"
