@@ -14,7 +14,7 @@ export default function Navbar({ setPage }) {
 	return (
 		<div className="navbar-nav">
 			<div className="navbar-selector-wrapper">
-				{["Home", "About Me", "Resume", "Projects", "Videos"].map(
+				{["Home", "Resume", "Projects", "About Me", "Videos"].map(
 					(p) => (
 						<div
 							className="navbar-page"

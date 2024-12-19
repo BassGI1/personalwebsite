@@ -31,7 +31,7 @@ export default function Projects() {
 						const rightPercentage =
 							0.5 - (e.clientX - rect.left) / rect.width
 						hoverTarget.current.style.transform = `rotateX(${
-							topPercentage * -0.025
+							topPercentage * -0.05
 						}turn) rotateY(${rightPercentage * -0.05}turn)`
 					}}
 				>
