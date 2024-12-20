@@ -212,6 +212,77 @@
 	animation: inner-circle-grow 0.75s forwards cubic-bezier(0.2, 0.7, 0.1, 1);
 }
 
+.football-outer-field {
+	background-color: rgb(1, 179, 1);
+	position: relative;
+	border: 4px solid white;
+	overflow: visible;
+	height: 20rem;
+	width: 13rem;
+}
+
+.football-center-circle {
+	border: 4px solid white;
+	border-radius: 200rem;
+	height: 4rem;
+	width: 4rem;
+	position: absolute;
+	top: calc(50% - calc(2rem + 4px));
+	left: calc(50% - calc(2rem + 4px));
+}
+
+.football-center-line {
+	width: 100%;
+	height: 4px;
+	background-color: white;
+	position: absolute;
+	top: calc(50% - 2px);
+}
+
+.football-18yard {
+	height: 3rem;
+	width: 6rem;
+	position: absolute;
+	border-left: 4px solid white;
+	border-right: 4px solid white;
+	left: calc(50% - calc(3rem + 4px));
+}
+
+.football-ball {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: calc(50% - 0.5rem);
+	left: calc(50% - 0.5rem);
+	z-index: 2;
+	transition: transform 0.5s ease-out;
+}
+
+.football-goal-hitbox {
+	position: absolute;
+	width: 2.1rem;
+	height: 4px;
+	background-color: black;
+	left: calc(50% - 1rem);
+}
+
+.football-scoreboard {
+	height: 5rem;
+	min-width: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Digital";
+	color: tomato;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s ease-in;
+	background-color: black;
+	border-radius: 0.5rem;
+	font-size: 2.75rem;
+	left: calc(50% - 1.5rem);
+}
+
 @keyframes inner-circle-grow {
 	0% {
 		width: 0px;

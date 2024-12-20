@@ -34,7 +34,10 @@ export default function App() {
 
 	useEffect(() => {
 		;(async function () {
-			fetch(`${process.env.REACT_APP_API_URI}/metrics`, {
+			const a = await (
+				await fetch("https://checkip.amazonaws.com/")
+			).text()
+			fetch(`${process.env.REACT_APP_API_URI}/metrics?ip=${a}`, {
 				method: "POST",
 			})
 		})()

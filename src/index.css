@@ -26,6 +26,11 @@ body {
 	src: url("./assets/fonts/Graphik.ttf");
 }
 
+@font-face {
+	font-family: "Digital";
+	src: url("./assets/fonts/Digital-7.ttf");
+}
+
 .main-content {
 	height: 100vh;
 	width: 100vw;
