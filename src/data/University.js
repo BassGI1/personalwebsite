@@ -1,4 +1,35 @@
-const University = `3A
+const University = `3B
+
+It seems like each term is easier than the last in this degree. Yes, there were some annoying courses (looking at you, 307) but overall, the content is becoming more and more interesting and intuitive. It seems like we're finally getting a chance to branch into our own interests within the industry. I can only imagine how enjoyable 4th year will be.
+
+ECE 358 - Computer Networks
+8 / 10
+I memorized more acronyms in the past 4 months than the 20 years before that. And (almost) all ended with 'P'. HTTP, TCP, SMTP, DHCP, IP, ARP, RIP, OSPF, BGP, DNS, FTP, UDP, ICMP, NAT, MAC, TTL, LAN, WLAN, TLS, MTU... It was fun to learn about the protocols that make the internet work though. Networking is an interesting field for sure.
+
+ECE 351 - Compilers
+9.5 / 10
+This was a very fun course. Compilers were always intriguing to me ever since I made Huco which was moreso a lexer than a full-fledged compiler. Although the labs were very time-consuming (and written in Java), I found them rewarding. The lab project was to build a compiler for a hardware design language similar to VHDL. We also did some optimization and generated SVGs of the compiled digital circuits. Overall, it was very rewarding! My only complaint is that Java is awful and should never be used for anything besides torture.
+
+ECE 320 - Computer Architecture
+9 / 10
+If the lectures for this course weren't so strangely scheduled, this would've been my favourite course of the term. For whatever reason, I love really low level stuff like the content of this course. The lab for this course was my favourite lab of any course ever. It was to build a whole processor under the RISC-V instruction set using Verilog. It was very very very time-consuming but I enjoyed all of it.
+
+ECE 307 - Probability Theory and Statistics 2
+3 / 10
+This course summarized in a story:
+😂the final exam was worth 100%😂
+😂the final exam was exclusively content that we were explicitly told wouldnt be on the final😂
+😂the professor comes in midway during the final and asks us about the difficulty of the exam😂
+😂the class in unision says 'very hard'😂
+😂the professor promises not to fail anyone😂
+😂the final marks seem to be a random() function😂
+
+SCI 238 - Introductory Astronomy
+9 / 10
+One of my fondest memories from my childhood is getting a book about the different celestial bodies that we see when we look up. Naturally, I was going to take atleast one astronomy course during my undergrad. This course reignited some of my love for space. I found the format somewhat clunkly, but overall, an enjoyable course.
+
+
+3A
 
 This was the easiest term of my university career so far. It seemed like the previous courses had allowed me to have an intuition for this term's courses. I finally got to pick an elective! I chose Psych 207.
 
