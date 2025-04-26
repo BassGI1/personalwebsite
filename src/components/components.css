@@ -316,11 +316,7 @@
 	width: 3rem;
 	height: 3rem;
 	background: rgb(255, 242, 4);
-	background: radial-gradient(
-		circle,
-		rgba(255, 242, 4, 1) 5%,
-		rgba(246, 89, 0, 1) 70%
-	);
+	background: radial-gradient(circle, rgba(255, 242, 4, 1) 5%, rgba(246, 89, 0, 1) 70%);
 	border-radius: 200rem;
 	position: absolute;
 	left: calc(50% - 1.5rem);
@@ -450,9 +446,182 @@
 	font-size: 0.4rem;
 }
 
-/* .space-info-right-image{
-	width: 40%;
-} */
+.basketball-court {
+	position: relative;
+	border: 4px solid white;
+	overflow: hidden;
+	height: 20rem;
+	width: 13rem;
+	background: url(../assets/basketball/Court.png);
+}
+
+.basketball-fan-row {
+	width: 100%;
+	height: 1.5rem;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: visible;
+}
+
+.basketball-fan {
+	height: 100%;
+	width: 0.75rem;
+}
+
+.basketball-fan-wrapper {
+	height: 100%;
+	width: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5%;
+}
+
+.basketball-fan-head {
+	height: 25%;
+	width: 50%;
+	background-color: #d09453;
+	border-radius: 100%;
+}
+
+.basketball-fan-body {
+	width: 100%;
+	height: 70%;
+	border-radius: 100%;
+}
+
+.basketball-fan-dance-left {
+	transform: translateY(-0.15rem) rotate(-15deg);
+}
+
+.basketball-fan-dance-right {
+	transform: translateY(-0.15rem) rotate(15deg);
+}
+
+.basketball-basket {
+	position: absolute;
+	width: 7.5rem;
+	left: 2.75rem;
+	top: 1.3rem;
+}
+
+.basketball-basketball {
+	width: 100%;
+	position: absolute;
+	bottom: -6.5rem;
+	cursor: pointer;
+}
+
+.basketball-splash {
+	animation: basketball-splash 2s forwards linear;
+}
+
+@keyframes basketball-splash {
+	50% {
+		transform: scale(60%) translateY(-5rem);
+	}
+	100% {
+		transform: scale(10%) translateY(-145rem);
+	}
+}
+
+.basketball-miss-1 {
+	animation: basketball-miss-1 2s forwards linear;
+}
+
+@keyframes basketball-miss-1 {
+	47.5% {
+		transform: scale(60%) translateY(-5rem);
+	}
+	95% {
+		transform: scale(10%) translateY(-155rem) translateX(10rem);
+	}
+	100% {
+		transform: scale(10%) translateY(-145rem) translateX(20rem);
+	}
+}
+
+.basketball-miss-2 {
+	animation: basketball-miss-2 2s forwards linear;
+}
+
+@keyframes basketball-miss-2 {
+	47.5% {
+		transform: scale(60%) translateY(-5rem);
+	}
+	95% {
+		transform: scale(10%) translateY(-155rem) translateX(-10rem);
+	}
+	100% {
+		transform: scale(10%) translateY(-145rem) translateX(-20rem);
+	}
+}
+
+.basketball-info-text {
+	font-family: "Graphik";
+	position: absolute;
+	color: #f59d38;
+	font-size: 0.75rem;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	cursor: default;
+	top: 0.3rem;
+}
+
+.basketball-shooting-bar {
+	height: 13rem;
+	background-color: white;
+	width: 0.75rem;
+	position: absolute;
+	right: 1rem;
+	top: 2.5rem;
+	border-radius: 2px;
+}
+
+.basketball-shooting-bar-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.basketball-shooting-bar-green-bean {
+	height: 2rem;
+	width: 100%;
+	background-color: rgb(1, 198, 1);
+	top: 2.5rem;
+	position: absolute;
+}
+
+.basketball-shooting-bar-current-shot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.basketball-shooting-bar-current-shot-shooting {
+	animation: basketball-shooting-bar-increase 1300ms linear forwards;
+}
+
+@keyframes basketball-shooting-bar-increase {
+	0% {
+		background-color: red;
+	}
+	65% {
+		background-color: green;
+	}
+	80% {
+		background-color: green;
+	}
+	100% {
+		height: 100%;
+		background-color: red;
+	}
+}
 
 @media (max-width: 768px) {
 	.navbar-nav {

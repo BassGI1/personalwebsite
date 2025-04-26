@@ -2,48 +2,41 @@ import "./AboutMe.css"
 import Space from "../../components/Space.js"
 import Football from "../../components/Football.js"
 import TypedText from "../../components/TypedText.js"
+import Basketball from "../../components/Basketball.js"
 
 export default function AboutMe() {
 	return (
 		<div className="main-wrapper">
 			<div className="aboutme-left-section">
 				<TypedText
-					text="About Me"
-					fontSize="3rem"
+					text="Hi, my name is Bassam!"
+					fontSize="2.5rem"
 					color="white"
 					font="Graphik"
+					timeRange={50}
+					minTime={50}
 				/>
 				<TypedText
-					text="Bassam El-Naggar"
-					fontSize="2rem"
+					text="I'm an aspiring software engineer, basketball and soccer fanatic, and amateur astronomer."
 					color="white"
 					font="Graphik"
-					timeRange={100}
-				/>
-				<TypedText
-					text="My name is Bassam El-Naggar and I am a 4th year Computer Engineering student at the University of Waterloo. I've completed 4 internships with a focus on full stack software engineering. I am currently completing a 5th internship at Babylist in California."
-					fontSize="1.5rem"
-					color="white"
-					font="Graphik"
+					fontSize="1.1rem"
+					timeRange={50}
 					minTime={10}
+				/>
+				<TypedText
+					text="I have completed 5 internships with a focus on full stack software engineering. I've built systems of all types of all levels; from a RISC-V processor to this website, I've been exposed to all kinds of software development. When I'm not writing code, you'll probably find me on a court or a field somewhere, playing a sport or stargazing."
+					color="white"
 					timeRange={10}
+					minTime={5}
 				/>
 			</div>
 			<div className="aboutme-right-section">
-				<h2>My Hobbies</h2>
-				<h6>
-					I have many hobbies, but a few are my love for sports
-					(specifically soccer) and my fascination with
-					astronomy. I love all kinds of technology, and I try to
-					be knowledgable in every area of it. I've built
-					frontend projects, backend projects, mobile apps,
-					network apps, firmware, even a RISC-V CPU. I'm always
-					looking for new things to learn and new projects to
-					work on!
-				</h6>
-				<div className="aboutme-right-section-games">
-					<Football />
+				<h2 className="aboutme-game-title">Fancy a Game?</h2>
+				<div className="aboutme-games-container">
+					<Basketball />
 					<Space />
+					<Football />
 				</div>
 			</div>
 		</div>
