@@ -17,7 +17,7 @@ const ResumeData = [
 			"Built several affiliate partner integrations, increasing revenue by >$1,000,000 annually.",
 			"Optimized registries endpoint to decrease latency across all registry visits by >15%.",
 			"Created a Sidekiq worker that automatically matches order numbers to registrant purchases, which results in >60% of incorrect user entries being corrected.",
-			"Built the 'add a shower' feature which allowed users to organize their baby showers, driving >10,000 registry per week."
+			"Built the 'add a shower' feature which allowed users to organize their baby showers, driving >10,000 registry visits per week."
 		],
 	],
 	[
