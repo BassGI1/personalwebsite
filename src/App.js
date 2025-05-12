@@ -40,7 +40,7 @@ export default function App() {
 	}, [])
 
 	useEffect(() => {
-		window.addEventListener("beforeunload", Tracking.postSession)
+		window.addEventListener("beforeunload", () => Tracking.postSession())
 	}, [])
 
 	return (

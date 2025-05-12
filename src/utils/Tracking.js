@@ -7,8 +7,9 @@ export default class Tracking {
 	}
 
 	static postSession() {
-		navigator.sendBeacon(
-			`${process.env.REACT_APP_API_URI}/events`,
+		const xhr = new XMLHttpRequest()
+		xhr.open("POST", `${process.env.REACT_APP_API_URI}/events`, false)
+		xhr.send(
 			JSON.stringify({
 				IP: Tracking.ipAddress,
 				events: Tracking.buffer,
