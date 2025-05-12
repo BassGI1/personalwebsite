@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 import "./Home.css"
 
 import Me from "../../assets/images/Me.png"
@@ -7,7 +9,13 @@ import LinkedIn from "../../assets/images/LinkedIn.png"
 import Constants from "../../utils/Constants.js"
 import TypedText from "../../components/TypedText.js"
 
+import Tracking from "../../utils/Tracking.js"
+
 export default function Home() {
+	useEffect(() => {
+		Tracking.addEvent("Home Page Viewed")
+	}, [])
+
 	return (
 		<div className="main-wrapper">
 			<div className="home-left-divider">
@@ -36,22 +44,20 @@ export default function Home() {
 					<img
 						src={LinkedIn}
 						alt="LinkedIn"
-						onClick={() =>
+						onClick={() => {
+							Tracking.addEvent("LinkedIn Visited")
 							window
-								.open(
-									"https://www.linkedin.com/in/bassam-el-naggar/"
-								)
+								.open("https://www.linkedin.com/in/bassam-el-naggar/")
 								.focus()
-						}
+						}}
 					/>
 					<img
 						src={Github}
 						alt="Github"
-						onClick={() =>
-							window.open(
-								"https://www.github.com/BassGI1/"
-							).focus()
-						}
+						onClick={() => {
+							Tracking.addEvent("Github Visited")
+							window.open("https://www.github.com/BassGI1/").focus()
+						}}
 					/>
 				</div>
 			</div>

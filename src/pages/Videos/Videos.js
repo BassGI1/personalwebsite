@@ -1,13 +1,18 @@
 import "./Videos.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Older from "../../assets/images/Older.png"
 import Newer from "../../assets/images/Newer.png"
 import VideoData from "../../data/VideoData.js"
 import TypedText from "../../components/TypedText.js"
+import Tracking from "../../utils/Tracking.js"
 
 export default function Videos() {
 	const [vid, setVid] = useState(0)
 	const [animate, setAnimate] = useState(0)
+
+	useEffect(() => {
+		Tracking.addEvent("Videos Page Viewed")
+	}, [])
 
 	return (
 		<div className="main-wrapper">
@@ -51,12 +56,10 @@ export default function Videos() {
 					src={Newer}
 					alt="newer"
 					onClick={() => {
+						Tracking.addEvent("Newer Clicked")
 						if (!animate) {
 							setAnimate(2)
-							setTimeout(
-								() => setVid(Math.max(vid - 1, 0)),
-								500
-							)
+							setTimeout(() => setVid(Math.max(vid - 1, 0)), 500)
 							setTimeout(() => setAnimate(0), 1500)
 						}
 					}}
@@ -69,26 +72,18 @@ export default function Videos() {
 					src={Older}
 					alt="older"
 					onClick={() => {
+						Tracking.addEvent("Older Clicked")
 						if (!animate) {
 							setAnimate(1)
 							setTimeout(
-								() =>
-									setVid(
-										Math.min(
-											vid + 1,
-											VideoData.length - 1
-										)
-									),
+								() => setVid(Math.min(vid + 1, VideoData.length - 1)),
 								500
 							)
 							setTimeout(() => setAnimate(0), 1500)
 						}
 					}}
 					style={{
-						visibility:
-							vid === VideoData.length - 1
-								? "hidden"
-								: "visible",
+						visibility: vid === VideoData.length - 1 ? "hidden" : "visible",
 						filter: animate ? "grayscale(100%)" : "none",
 					}}
 				/>

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 
 import Basket from "../assets/basketball/Basket.png"
 import Ball from "../assets/basketball/Basketball.png"
+import Tracking from "../utils/Tracking"
 
 const GREEN_BEAN_MAX = 1050
 const GREEN_BEAN_MIN = 850
@@ -100,6 +101,8 @@ export default function Basketball() {
 	}, [])
 
 	const onShootPressIn = () => {
+		Tracking.addEvent("Basketball Played")
+
 		setShowInfo(false)
 		setShowShootingBar(true)
 		pressInTime.current = Date.now()

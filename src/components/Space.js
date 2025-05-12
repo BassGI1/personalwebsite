@@ -12,6 +12,7 @@ import Saturn from "../assets/planets/Saturn.png"
 import Uranus from "../assets/planets/Uranus.png"
 import Neptune from "../assets/planets/Neptune.png"
 import Sun from "../assets/planets/Sun.png"
+import Tracking from "../utils/Tracking"
 
 const planets = [
 	["Mercury", Mercury, 2, Math.random() * 360],
@@ -83,6 +84,7 @@ export default function Space() {
 				className="space-planet-section"
 				onClick={() => {
 					setAnimate(true)
+					Tracking.addEvent("Planets Played")
 					setInfo(planetInfo[hoverTarget])
 				}}
 				style={{ top: animate ? "0px" : "calc(50% - 6.5rem)" }}

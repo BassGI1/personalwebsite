@@ -1,11 +1,16 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 import "./Projects.css"
 
 import ProjectsData from "../../data/ProjectsData.js"
+import Tracking from "../../utils/Tracking.js"
 
 export default function Projects() {
 	const hoverTarget = useRef(null)
+
+	useEffect(() => {
+		Tracking.addEvent("Projects Page Viewed")
+	}, [])
 
 	return (
 		<div className="main-wrapper">

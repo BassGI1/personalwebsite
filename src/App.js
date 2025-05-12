@@ -12,15 +12,15 @@ import Background from "./components/Background.js"
 import CommandLine from "./components/CommandLine.js"
 import TextFile from "./components/TextFile.js"
 
+import Tracking from "./utils/Tracking.js"
+
 export default function App() {
 	const background = useRef(null)
 	const [page, setPage] = useState("")
 	const [renderTextFile, setRenderTextFile] = useState("")
 
 	useEffect(() => {
-		background.current = document.getElementById(
-			"radial-gradient-dragging-main-content"
-		)
+		background.current = document.getElementById("radial-gradient-dragging-main-content")
 		window.addEventListener(
 			"mousemove",
 			(e) =>
@@ -34,13 +34,13 @@ export default function App() {
 
 	useEffect(() => {
 		;(async function () {
-			const a = await (
-				await fetch("https://checkip.amazonaws.com/")
-			).text()
-			fetch(`${process.env.REACT_APP_API_URI}/metrics?ip=${a}`, {
-				method: "POST",
-			})
+			const a = await (await fetch("https://checkip.amazonaws.com/")).text()
+			Tracking.ipAddress = a.replaceAll("\n", "")
 		})()
+	}, [])
+
+	useEffect(() => {
+		window.addEventListener("beforeunload", Tracking.postSession)
 	}, [])
 
 	return (
@@ -55,17 +55,10 @@ export default function App() {
 			{page === "Resume" ? <Resume /> : ""}
 			{page === "Projects" ? <Projects /> : ""}
 			{page === "Videos" ? <Videos /> : ""}
-			<CommandLine
-				page={page}
-				setPage={setPage}
-				setRenderTextFile={setRenderTextFile}
-			/>
+			<CommandLine page={page} setPage={setPage} setRenderTextFile={setRenderTextFile} />
 			<Background />
 			{renderTextFile.length ? (
-				<TextFile
-					text={renderTextFile}
-					close={() => setRenderTextFile("")}
-				/>
+				<TextFile text={renderTextFile} close={() => setRenderTextFile("")} />
 			) : (
 				""
 			)}

@@ -5,6 +5,7 @@ import University from "../data/University.js"
 import DO_NOT_OPEN from "../data/DoNotOpen.js"
 
 import "./components.css"
+import Tracking from "../utils/Tracking.js"
 
 const commands = {
 	help: `ls — list directory contents
@@ -91,9 +92,7 @@ export default function CommandLine({ page, setPage, setRenderTextFile }) {
 				""
 			)}
 			<div className="commandline-bottom-div">
-				<h5>{`C:/Desktop/bassamelnaggar${
-					page.length ? "/" + page : ""
-				}$`}</h5>
+				<h5>{`C:/Desktop/bassamelnaggar${page.length ? "/" + page : ""}$`}</h5>
 				<input
 					type="text"
 					id="terminal-input"
@@ -106,11 +105,17 @@ export default function CommandLine({ page, setPage, setRenderTextFile }) {
 								x.push(currentCommand)
 								return x
 							})
+							Tracking.addEvent(
+								`'${
+									currentCommand.length > 20
+										? currentCommand.slice(0, 17) + "..."
+										: currentCommand
+								}' Typed`
+							)
 							setCurrentCommand("")
 							commandHistoryIndex.current = null
 							setShowTop(true)
-							if (currentCommand === "exit")
-								window.close()
+							if (currentCommand === "exit") window.close()
 							else if (currentCommand.match(cdRegex)) {
 								const temp = currentCommand.replace(
 									currentCommand.match(cdRegex)[0],
@@ -122,10 +127,7 @@ export default function CommandLine({ page, setPage, setRenderTextFile }) {
 								} else if (pages.has(temp)) {
 									setPage(
 										temp[0] === "/"
-											? temp.slice(
-													1,
-													temp.length
-											  )
+											? temp.slice(1, temp.length)
 											: temp
 									)
 									setCurrentOutput("")
@@ -145,13 +147,9 @@ export default function CommandLine({ page, setPage, setRenderTextFile }) {
 									""
 								)
 								if (openMap[string] === undefined)
-									setCurrentOutput(
-										`Could not find file '${string}'`
-									)
+									setCurrentOutput(`Could not find file '${string}'`)
 								else {
-									setCurrentOutput(
-										`Opening '${string}'...`
-									)
+									setCurrentOutput(`Opening '${string}'...`)
 									setRenderTextFile(openMap[string])
 								}
 							} else
@@ -160,35 +158,19 @@ export default function CommandLine({ page, setPage, setRenderTextFile }) {
 										? commands[currentCommand]
 										: `Command '${currentCommand}' not found`
 								)
-						} else if (
-							e.key === "ArrowUp" &&
-							commandHistory.length
-						) {
+						} else if (e.key === "ArrowUp" && commandHistory.length) {
 							if (commandHistoryIndex.current === null)
-								commandHistoryIndex.current =
-									commandHistory.length - 1
+								commandHistoryIndex.current = commandHistory.length - 1
 							else if (commandHistoryIndex.current > 0)
 								--commandHistoryIndex.current
-							setCurrentCommand(
-								commandHistory[
-									commandHistoryIndex.current
-								]
-							)
-						} else if (
-							e.key === "ArrowDown" &&
-							commandHistoryIndex !== null
-						) {
+							setCurrentCommand(commandHistory[commandHistoryIndex.current])
+						} else if (e.key === "ArrowDown" && commandHistoryIndex !== null) {
 							if (
 								commandHistoryIndex.current >= 0 &&
-								commandHistoryIndex.current <
-									commandHistory.length - 1
+								commandHistoryIndex.current < commandHistory.length - 1
 							)
 								++commandHistoryIndex.current
-							setCurrentCommand(
-								commandHistory[
-									commandHistoryIndex.current
-								]
-							)
+							setCurrentCommand(commandHistory[commandHistoryIndex.current])
 						}
 					}}
 					onChange={(e) => {

@@ -1,10 +1,20 @@
+import { useEffect } from "react"
+
 import "./AboutMe.css"
+
 import Space from "../../components/Space.js"
 import Football from "../../components/Football.js"
 import TypedText from "../../components/TypedText.js"
 import Basketball from "../../components/Basketball.js"
 
+import Tracking from "../../utils/Tracking.js"
+
 export default function AboutMe() {
+
+	useEffect(() => {
+		Tracking.addEvent("AboutMe Page Viewed")
+	}, [])
+
 	return (
 		<div className="main-wrapper">
 			<div className="aboutme-left-section">

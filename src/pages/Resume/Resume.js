@@ -47,6 +47,7 @@ import Docker from "../../assets/technologies/tools/Docker.png"
 import GCP from "../../assets/technologies/tools/GCP.png"
 import Git from "../../assets/technologies/tools/Git.png"
 import Linux from "../../assets/technologies/tools/Linux.png"
+import Tracking from "../../utils/Tracking.js"
 
 const languages = [
 	[JavaScript, "JavaScript"],
@@ -87,10 +88,12 @@ const tools = [
 ]
 
 export default function Resume() {
-	const [jobShowingArr, setJobShowingArr] = useState(
-		new Array(ResumeData.length).fill(false)
-	)
+	const [jobShowingArr, setJobShowingArr] = useState(new Array(ResumeData.length).fill(false))
 	const showThresholds = useRef([])
+
+	useEffect(() => {
+		Tracking.addEvent("Resume Page Viewed")
+	}, [])
 
 	useEffect(() => {
 		showThresholds.current.push(
@@ -101,24 +104,18 @@ export default function Resume() {
 		for (let i = 1; i < ResumeData.length; ++i)
 			showThresholds.current.push(
 				showThresholds.current[showThresholds.current.length - 1] +
-					document.getElementById(ResumeData[i][3])
-						.scrollHeight +
+					document.getElementById(ResumeData[i][3]).scrollHeight +
 					100
 			)
 
-		document
-			.getElementById("resume-wrapper")
-			.addEventListener("scroll", (e) => {
-				const temp = [...jobShowingArr]
-				for (let i = 0; i < temp.length; ++i) {
-					if (
-						e.target.scrollTop + e.target.offsetHeight >=
-						showThresholds.current[i]
-					)
-						temp[i] = true
-				}
-				setJobShowingArr(temp)
-			})
+		document.getElementById("resume-wrapper").addEventListener("scroll", (e) => {
+			const temp = [...jobShowingArr]
+			for (let i = 0; i < temp.length; ++i) {
+				if (e.target.scrollTop + e.target.offsetHeight >= showThresholds.current[i])
+					temp[i] = true
+			}
+			setJobShowingArr(temp)
+		})
 	}, [])
 
 	return (
@@ -142,13 +139,17 @@ export default function Resume() {
 			>
 				<div className="resume-bordering-div">
 					<img src={Email} alt="Email" />
-					<a href="mailto:basmaym148@gmail.com">
-						basmaym148@gmail.com
-					</a>
+					<a href="mailto:basmaym148@gmail.com">basmaym148@gmail.com</a>
 				</div>
 				<div className="resume-bordering-div">
 					<img src={PDF} alt="Resume" />
-					<a href={ResumePDF} without rel="noopener noreferrer" target="_blank">
+					<a
+						href={ResumePDF}
+						without
+						rel="noopener noreferrer"
+						target="_blank"
+						onClick={() => Tracking.addEvent("Resume Viewed")}
+					>
 						Resume (PDF)
 					</a>
 				</div>
@@ -241,9 +242,7 @@ function Employment({
 				}}
 			>
 				<h2 className="resume-employment-job-title">{jobTitle}</h2>
-				<h3 className="resume-employment-job-title">
-					{companyName}
-				</h3>
+				<h3 className="resume-employment-job-title">{companyName}</h3>
 				<h4 className="resume-employment-job-title">
 					{startDate} — {endDate}
 				</h4>
@@ -258,10 +257,7 @@ function Employment({
 				<img src={companyImage} alt={companyName} />
 				{fadeIn ? (
 					<TypedText
-						text={query
-							.replaceAll("+", " ")
-							.split(",")
-							.join(", ")}
+						text={query.replaceAll("+", " ").split(",").join(", ")}
 						font="Graphik"
 						color="white"
 						timeRange={50}
@@ -299,10 +295,7 @@ function Employment({
 				<img src={companyImage} alt={companyName} />
 				{fadeIn ? (
 					<TypedText
-						text={query
-							.replaceAll("+", " ")
-							.split(",")
-							.join(", ")}
+						text={query.replaceAll("+", " ").split(",").join(", ")}
 						font="Graphik"
 						color="white"
 						timeRange={50}
@@ -325,9 +318,7 @@ function Employment({
 				}}
 			>
 				<h2 className="resume-employment-job-title">{jobTitle}</h2>
-				<h3 className="resume-employment-job-title">
-					{companyName}
-				</h3>
+				<h3 className="resume-employment-job-title">{companyName}</h3>
 				<h4 className="resume-employment-job-title">
 					{startDate} — {endDate}
 				</h4>
