@@ -1,5 +1,9 @@
 const VideoData = [
 	{
+		term: "Fall 2025",
+		src: "https://www.youtube.com/embed/N2iB9DBwWSo?si=1QLqAkFoABBM7NQa",
+	},
+	{
 		term: "Winter 2025",
 		src: "https://www.youtube.com/embed/-KzTgGoOn-w?si=kVZ7RN4WIAjTHKRP",
 	},
