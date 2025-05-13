@@ -39,10 +39,6 @@ export default function App() {
 		})()
 	}, [])
 
-	useEffect(() => {
-		window.addEventListener("beforeunload", () => Tracking.postSession())
-	}, [])
-
 	return (
 		<main
 			className="main-content"
