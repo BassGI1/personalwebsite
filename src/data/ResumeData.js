@@ -9,7 +9,7 @@ const ResumeData = [
 		Babylist,
 		"Software Engineer",
 		"January 2025",
-		"Current",
+		"April 2025",
 		"Emeryville, California, United States",
 		"Emeryville,California,United+States",
 		[
