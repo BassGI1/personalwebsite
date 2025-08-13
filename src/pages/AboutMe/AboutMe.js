@@ -8,9 +8,9 @@ import TypedText from "../../components/TypedText.js"
 import Basketball from "../../components/Basketball.js"
 
 import Tracking from "../../utils/Tracking.js"
+import TicTacToe from "../../components/TicTacToe.js"
 
 export default function AboutMe() {
-
 	useEffect(() => {
 		Tracking.addEvent("AboutMe Page Viewed")
 	}, [])
@@ -42,11 +42,17 @@ export default function AboutMe() {
 				/>
 			</div>
 			<div className="aboutme-right-section">
-				<h2 className="aboutme-game-title">Fancy a Game?</h2>
-				<div className="aboutme-games-container">
-					<Basketball />
-					<Space />
-					<Football />
+				<div className="about-me-games-text-container">
+					<h2 className="aboutme-game-title">Fancy a Game?</h2>
+				</div>
+
+				<div className="aboutme-games-scroll">
+					<div className="aboutme-games-container">
+						<TicTacToe />
+						<Basketball />
+						<Space />
+						<Football />
+					</div>
 				</div>
 			</div>
 		</div>

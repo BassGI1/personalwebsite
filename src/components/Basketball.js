@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import Basket from "../assets/basketball/Basket.png"
 import Ball from "../assets/basketball/Basketball.png"
 import Tracking from "../utils/Tracking"
+import Random from "../utils/Random"
 
 const GREEN_BEAN_MAX = 1050
 const GREEN_BEAN_MIN = 850
@@ -51,12 +52,6 @@ const Person = ({ colour, className }) => {
 	)
 }
 
-const generateRandomPerson = () => {
-	return `#${Math.floor(Math.random() * 256).toString(16)}${Math.floor(
-		Math.random() * 256
-	).toString(16)}${Math.floor(Math.random() * 256).toString(16)}`
-}
-
 export default function Basketball() {
 	const [row1, setRow1] = useState([])
 	const [row2, setRow2] = useState([])
@@ -76,27 +71,27 @@ export default function Basketball() {
 	useEffect(() => {
 		let temp = []
 		let numFans = 12 + Math.floor(Math.random() * 10)
-		for (let _ = 0; _ < numFans; ++_) temp.push(generateRandomPerson())
+		for (let _ = 0; _ < numFans; ++_) temp.push(Random.colour())
 		setRow1(temp)
 
 		temp = []
 		numFans = 12 + Math.floor(Math.random() * 10)
-		for (let _ = 0; _ < numFans; ++_) temp.push(generateRandomPerson())
+		for (let _ = 0; _ < numFans; ++_) temp.push(Random.colour())
 		setRow2(temp)
 
 		temp = []
 		numFans = 12 + Math.floor(Math.random() * 10)
-		for (let _ = 0; _ < numFans; ++_) temp.push(generateRandomPerson())
+		for (let _ = 0; _ < numFans; ++_) temp.push(Random.colour())
 		setRow3(temp)
 
 		temp = []
 		numFans = 12 + Math.floor(Math.random() * 10)
-		for (let _ = 0; _ < numFans; ++_) temp.push(generateRandomPerson())
+		for (let _ = 0; _ < numFans; ++_) temp.push(Random.colour())
 		setRow4(temp)
 
 		temp = []
 		numFans = 12 + Math.floor(Math.random() * 10)
-		for (let _ = 0; _ < numFans; ++_) temp.push(generateRandomPerson())
+		for (let _ = 0; _ < numFans; ++_) temp.push(Random.colour())
 		setRow5(temp)
 	}, [])
 

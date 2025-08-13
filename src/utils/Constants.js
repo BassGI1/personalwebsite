@@ -7,6 +7,7 @@ const Constants = {
 		starColour: "white",
 		secondaryColour: "#645cff"
 	},
+	trackingActive: false
 }
 
 export default Constants

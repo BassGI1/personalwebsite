@@ -36,6 +36,11 @@ body {
 	src: url("./assets/fonts/Toxigenesis.ttf");
 }
 
+@font-face {
+	font-family: "Rebellion";
+	src: url("./assets/fonts//Rebellion.ttf");
+}
+
 .main-content {
 	height: 100vh;
 	width: 100vw;
