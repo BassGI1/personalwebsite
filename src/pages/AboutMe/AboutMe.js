@@ -2,13 +2,15 @@ import { useEffect } from "react"
 
 import "./AboutMe.css"
 
-import Space from "../../components/Space.js"
-import Football from "../../components/Football.js"
 import TypedText from "../../components/TypedText.js"
-import Basketball from "../../components/Basketball.js"
+
+import Space from "../../components/games/Space.js"
+import Tetris from "../../components/games/Tetris/Tetris.js"
+import Football from "../../components/games/Football.js"
+import TicTacToe from "../../components/games/TicTacToe.js"
+import Basketball from "../../components/games/Basketball.js"
 
 import Tracking from "../../utils/Tracking.js"
-import TicTacToe from "../../components/TicTacToe.js"
 
 export default function AboutMe() {
 	useEffect(() => {
@@ -48,6 +50,7 @@ export default function AboutMe() {
 
 				<div className="aboutme-games-scroll">
 					<div className="aboutme-games-container">
+						<Tetris />
 						<TicTacToe />
 						<Basketball />
 						<Space />

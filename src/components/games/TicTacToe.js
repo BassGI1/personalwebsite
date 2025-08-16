@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 
-import Board from "../assets/tictactoe/TicTacToe.png"
+import Board from "../../assets/tictactoe/TicTacToe.png"
 import Confetti from "./Confetti"
-import Tracking from "../utils/Tracking"
+import Tracking from "../../utils/Tracking"
 
 const DRAW_DURATION = 500
 const X_COLOR = "rgb(248, 65, 65)"

@@ -38,7 +38,12 @@ body {
 
 @font-face {
 	font-family: "Rebellion";
-	src: url("./assets/fonts//Rebellion.ttf");
+	src: url("./assets/fonts/Rebellion.ttf");
+}
+
+@font-face {
+	font-family: "8-bit";
+	src: url("./assets/fonts/8-bit.ttf");
 }
 
 .main-content {

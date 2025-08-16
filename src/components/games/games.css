@@ -1,0 +1,615 @@
+.football-outer-field {
+	background-color: rgb(1, 179, 1);
+	position: relative;
+	border: 4px solid white;
+	overflow: visible;
+	height: 20rem;
+	width: 13rem;
+}
+
+.football-center-circle {
+	border: 4px solid white;
+	border-radius: 200rem;
+	height: 4rem;
+	width: 4rem;
+	position: absolute;
+	top: calc(50% - calc(2rem + 4px));
+	left: calc(50% - calc(2rem + 4px));
+}
+
+.football-center-line {
+	width: 100%;
+	height: 4px;
+	background-color: white;
+	position: absolute;
+	top: calc(50% - 2px);
+}
+
+.football-18yard {
+	height: 3rem;
+	width: 6rem;
+	position: absolute;
+	border-left: 4px solid white;
+	border-right: 4px solid white;
+	left: calc(50% - calc(3rem + 4px));
+}
+
+.football-ball {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: calc(50% - 0.5rem);
+	left: calc(50% - 0.5rem);
+	z-index: 2;
+	transition: transform 0.5s ease-out;
+}
+
+.football-goal-hitbox {
+	position: absolute;
+	width: 2.1rem;
+	height: 4px;
+	background-color: black;
+	left: calc(50% - 1rem);
+}
+
+.football-scoreboard {
+	height: 5rem;
+	min-width: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Digital";
+	color: tomato;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s ease-in;
+	background-color: black;
+	border-radius: 0.5rem;
+	font-size: 2.75rem;
+	left: calc(50% - 1.5rem);
+	cursor: default;
+}
+
+@keyframes inner-circle-grow {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.space-background {
+	width: 13rem;
+	height: 20rem;
+	background-color: black;
+	border: 4px solid white;
+	position: relative;
+}
+
+.space-planet-section {
+	width: 13rem;
+	height: 13rem;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 6.5rem);
+	transition: top 0.5s ease-in-out;
+}
+
+.space-sun {
+	width: 3rem;
+	height: 3rem;
+	background: rgb(255, 242, 4);
+	background: radial-gradient(circle, rgba(255, 242, 4, 1) 5%, rgba(246, 89, 0, 1) 70%);
+	border-radius: 200rem;
+	position: absolute;
+	left: calc(50% - 1.5rem);
+	top: calc(50% - 1.5rem);
+	animation: spaceSunGlow 0.25s infinite alternate linear;
+	z-index: 16;
+	cursor: pointer;
+}
+
+@keyframes spaceSunGlow {
+	to {
+		filter: brightness(1.1);
+	}
+}
+
+.space-orbit {
+	border-radius: 200rem;
+	position: absolute;
+	overflow: visible;
+	transition: border 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.space-orbit-active {
+	border: 1px solid white;
+}
+
+.space-planet {
+	position: absolute;
+	left: 0px;
+}
+
+.space-orbit-Earth {
+	animation: spaceOrbit 5s infinite linear;
+}
+
+.space-orbit-Mercury {
+	animation: spaceOrbit 1.21s infinite linear;
+}
+
+.space-orbit-Venus {
+	animation: spaceOrbit 3.08s infinite linear;
+}
+
+.space-orbit-Mars {
+	animation: spaceOrbit 9.41s infinite linear;
+}
+
+.space-orbit-Jupiter {
+	animation: spaceOrbit 59.31s infinite linear;
+}
+
+.space-orbit-Saturn {
+	animation: spaceOrbit 147s infinite linear;
+}
+
+.space-orbit-Neptune {
+	animation: spaceOrbit 826s infinite linear;
+}
+
+.space-orbit-Uranus {
+	animation: spaceOrbit 420s infinite linear;
+}
+
+@keyframes spaceOrbit {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.space-info-section {
+	position: absolute;
+	width: 13rem;
+	height: 7rem;
+	left: 0px;
+	bottom: 0px;
+	background-color: rgb(69, 68, 67);
+	opacity: 0;
+	animation: spaceInfoFadeIn 0.5s forwards ease-in-out;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+@keyframes spaceInfoFadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+.space-info-back {
+	position: absolute;
+	aspect-ratio: 1 / 1;
+	height: 1.1rem;
+	width: 1.1rem;
+	right: 0.5rem;
+	top: 0.5rem;
+	filter: invert(1);
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 0.15s ease-in-out;
+}
+
+.space-info-back:hover {
+	opacity: 1;
+}
+
+.space-info-left-section {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+.space-info-left-title {
+	font-family: "Toxigenesis";
+	color: white;
+	font-size: 1.1rem;
+}
+
+.space-info-left-text {
+	font-family: "Toxigenesis";
+	color: white;
+	font-size: 0.4rem;
+}
+
+.basketball-court {
+	position: relative;
+	border: 4px solid white;
+	overflow: hidden;
+	height: 20rem;
+	width: 13rem;
+	background: url(../../assets/basketball/Court.png);
+}
+
+.basketball-fan-row {
+	width: 100%;
+	height: 1.5rem;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: visible;
+}
+
+.basketball-fan {
+	height: 100%;
+	width: 0.75rem;
+}
+
+.basketball-fan-wrapper {
+	height: 100%;
+	width: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5%;
+}
+
+.basketball-fan-head {
+	height: 25%;
+	width: 50%;
+	background-color: #d09453;
+	border-radius: 100%;
+}
+
+.basketball-fan-body {
+	width: 100%;
+	height: 70%;
+	border-radius: 100%;
+}
+
+.basketball-fan-dance-left {
+	transform: translateY(-0.15rem) rotate(-15deg);
+}
+
+.basketball-fan-dance-right {
+	transform: translateY(-0.15rem) rotate(15deg);
+}
+
+.basketball-basket {
+	position: absolute;
+	width: 7.5rem;
+	left: 2.75rem;
+	top: 1.3rem;
+}
+
+.basketball-basketball {
+	width: 100%;
+	position: absolute;
+	bottom: -6.5rem;
+	cursor: pointer;
+}
+
+.basketball-splash {
+	animation: basketball-splash 2s forwards linear;
+}
+
+@keyframes basketball-splash {
+	50% {
+		transform: scale(60%) translateY(-5rem);
+	}
+	100% {
+		transform: scale(10%) translateY(-145rem);
+	}
+}
+
+.basketball-miss-1 {
+	animation: basketball-miss-1 2s forwards linear;
+}
+
+@keyframes basketball-miss-1 {
+	47.5% {
+		transform: scale(60%) translateY(-5rem);
+	}
+	95% {
+		transform: scale(10%) translateY(-155rem) translateX(10rem);
+	}
+	100% {
+		transform: scale(10%) translateY(-145rem) translateX(20rem);
+	}
+}
+
+.basketball-miss-2 {
+	animation: basketball-miss-2 2s forwards linear;
+}
+
+@keyframes basketball-miss-2 {
+	47.5% {
+		transform: scale(60%) translateY(-5rem);
+	}
+	95% {
+		transform: scale(10%) translateY(-155rem) translateX(-10rem);
+	}
+	100% {
+		transform: scale(10%) translateY(-145rem) translateX(-20rem);
+	}
+}
+
+.basketball-info-text {
+	font-family: "Graphik";
+	position: absolute;
+	color: #f59d38;
+	font-size: 0.75rem;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	cursor: default;
+	top: 0.3rem;
+}
+
+.basketball-shooting-bar {
+	height: 13rem;
+	background-color: white;
+	width: 0.75rem;
+	position: absolute;
+	right: 1rem;
+	top: 2.5rem;
+	border-radius: 2px;
+}
+
+.basketball-shooting-bar-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.basketball-shooting-bar-green-bean {
+	height: 2rem;
+	width: 100%;
+	background-color: rgb(1, 198, 1);
+	top: 2.5rem;
+	position: absolute;
+}
+
+.basketball-shooting-bar-current-shot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.basketball-shooting-bar-current-shot-shooting {
+	animation: basketball-shooting-bar-increase 1300ms linear forwards;
+}
+
+@keyframes basketball-shooting-bar-increase {
+	0% {
+		background-color: red;
+	}
+	65% {
+		background-color: green;
+	}
+	80% {
+		background-color: green;
+	}
+	100% {
+		height: 100%;
+		background-color: red;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-nav {
+		height: 7rem;
+	}
+
+	.navbar-selector-wrapper {
+		width: 100%;
+	}
+}
+
+.tic-tac-toe-background {
+	width: 13rem;
+	height: 20rem;
+	border: 4px solid white;
+	background-color: #f3c069;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tic-tac-toe-game-container {
+	width: 12rem;
+	height: 12rem;
+	position: relative;
+	overflow: visible;
+}
+
+.tic-tac-toe-board {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+.tic-tac-toe-main-game-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 7.78%;
+}
+
+.tic-tac-toe-move-spot {
+	width: 28%;
+	height: 28%;
+	cursor: pointer;
+}
+
+.tic-tac-toe-win-line {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: visible;
+}
+
+.confetti-confet {
+	position: absolute;
+}
+
+.tic-tac-toe-confetti-container {
+	height: 20rem;
+	width: 13rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.tic-tac-toe-result-backdrop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 20rem;
+	width: 13rem;
+	animation: tic-tac-toe-result-backdrop 500ms forwards ease-in;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+@keyframes tic-tac-toe-result-backdrop {
+	from {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	to {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+}
+
+.tic-tac-toe-result-backdrop h2 {
+	font-family: "Rebellion";
+	letter-spacing: 2px;
+	font-size: 1.75rem;
+	margin: 0;
+}
+
+.tic-tac-toe-result-backdrop button {
+	border-radius: 0.5rem;
+	background-color: rgb(121, 121, 255);
+	border: none;
+	color: white;
+	padding: 0.75rem;
+	cursor: pointer;
+	font-family: "Graphik";
+	font-weight: 900;
+	transition: background-color 150ms ease-in;
+}
+
+.tic-tac-toe-result-backdrop button:hover {
+	background-color: rgb(101, 101, 210);
+}
+
+.tetris-background {
+	width: 13rem;
+	height: 20rem;
+	border: 4px solid white;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.tetris-top-bar {
+	height: 3.5rem;
+	width: 100%;
+	border-bottom: 4px solid white;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+	font-family: "8-bit";
+	font-size: 0.75rem;
+}
+
+.tetris-game-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
+	gap: 1px;
+	justify-content: center;
+}
+
+.tetris-game-setup-background {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.tetris-game-setup-background button {
+	border-radius: 0.5rem;
+	background-color: rgb(121, 121, 255);
+	border: none;
+	color: white;
+	padding: 0.5rem;
+	cursor: pointer;
+	font-family: "8-bit";
+	font-size: 0.6rem;
+	font-weight: 900;
+	transition: background-color 150ms ease-in;
+}
+
+.tetris-game-setup-background button:hover {
+	background-color: rgb(101, 101, 210);
+}
+
+.tetris-game-setup-background h3 {
+	margin: 0;
+	color: white;
+	font-family: "8-bit";
+	font-size: 1rem;
+	text-align: center;
+}
+
+.tetris-game-over-background {
+	position: absolute;
+	width: 12.775rem;
+	height: 16.25rem;
+	transform: translateY(3.75rem);
+	animation: tetris-game-over-background 500ms forwards ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(196, 54, 54);
+	font-family: "8-bit";
+}
+
+@keyframes tetris-game-over-background {
+	from {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	to {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+}

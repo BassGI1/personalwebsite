@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import Random from "../utils/Random"
+import Random from "../../utils/Random"
 
 const Confet = ({ colour, id, width, height, left, speed, containerHeight, onAnimationFinish }) => {
 	useEffect(() => {

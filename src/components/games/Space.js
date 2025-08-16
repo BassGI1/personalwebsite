@@ -1,18 +1,17 @@
-import "./components.css"
 import { useState } from "react"
 
-import Back from "../assets/images/back.png"
+import Back from "../../assets/images/back.png"
 
-import Mercury from "../assets/planets/Mercury.png"
-import Venus from "../assets/planets/Venus.png"
-import Earth from "../assets/planets/Earth.png"
-import Mars from "../assets/planets/Mars.png"
-import Jupiter from "../assets/planets/Jupiter.png"
-import Saturn from "../assets/planets/Saturn.png"
-import Uranus from "../assets/planets/Uranus.png"
-import Neptune from "../assets/planets/Neptune.png"
-import Sun from "../assets/planets/Sun.png"
-import Tracking from "../utils/Tracking"
+import Mercury from "../../assets/planets/Mercury.png"
+import Venus from "../../assets/planets/Venus.png"
+import Earth from "../../assets/planets/Earth.png"
+import Mars from "../../assets/planets/Mars.png"
+import Jupiter from "../../assets/planets/Jupiter.png"
+import Saturn from "../../assets/planets/Saturn.png"
+import Uranus from "../../assets/planets/Uranus.png"
+import Neptune from "../../assets/planets/Neptune.png"
+import Sun from "../../assets/planets/Sun.png"
+import Tracking from "../../utils/Tracking"
 
 const planets = [
 	["Mercury", Mercury, 2, Math.random() * 360],

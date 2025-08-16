@@ -1,9 +1,11 @@
+import "./games.css"
+
 import { useEffect, useRef, useState } from "react"
 
-import Basket from "../assets/basketball/Basket.png"
-import Ball from "../assets/basketball/Basketball.png"
-import Tracking from "../utils/Tracking"
-import Random from "../utils/Random"
+import Basket from "../../assets/basketball/Basket.png"
+import Ball from "../../assets/basketball/Basketball.png"
+import Tracking from "../../utils/Tracking"
+import Random from "../../utils/Random"
 
 const GREEN_BEAN_MAX = 1050
 const GREEN_BEAN_MIN = 850

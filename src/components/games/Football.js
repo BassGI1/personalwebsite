@@ -1,7 +1,8 @@
-import "./components.css"
+import "../components.css"
 import { useState, useEffect, useRef } from "react"
-import Ball from "../assets/images/Football.png"
-import Tracking from "../utils/Tracking"
+
+import Ball from "../../assets/images/Football.png"
+import Tracking from "../../utils/Tracking"
 
 export default function Football() {
 	const vector = useRef([0, 0])
