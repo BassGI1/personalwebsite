@@ -1,4 +1,29 @@
-const University = `3B
+const University = `4A
+
+Continuing the trend of content becoming more and more interesting, this term was a lot of fun! I decided to take an AI course because I thought it would be a good idea to get a foundational understanding of AI, and it more or less sparked something in me. I'm considering doing a masters in AI if possible.
+
+ECE 498A - Engineering Design Project - 1
+8 / 10
+The first half of our capstone project. I enjoyed the long grind from ideation to prototype, although the grind was certainly tiring at times. Our project is a retrofittable awareness system for bikes called RideSafe. I got to work on some really cool features such as BLE and object detection. The grading for this course was a bit strange, and the requirement that the prototype be at least 75% complete by the first term was a bit unnecessary though, and was the main contributor to the course being such a grind.
+
+ECE 458 - Computer Security
+8.5 / 10
+I thought this course would have been a lot more technical than it actually ended up being. A lot of the content was discussing human vulnerability moreso than code vulnerabilities. It was still interesting though.
+
+ECE 457B - Foundations of Computational Intelligence
+10 / 10
+This course opened my eyes to the size of the giants whose shoulders we are fortunate enough to stand upon. Calling a simple '.fit_transform' function on a model in tensorflow hides the black magic (math) going on in the background of the function call. Taking this course really gave me a deeper appreciation for math as a whole. I still think Neural Networks are magic though.
+
+ECE 454 - Distributed Computing
+5 / 10
+Labs were long and annoying, and the lectures were completely useless. Who thought it was a good idea to use SCALA for labs? I would even take Java over it and that's really saying something considering how repulsive Java is.
+
+CLAS 104 - Classical Mythology
+3 / 10
+Bird.
+
+
+3B
 
 It seems like each term is easier than the last in this degree. Yes, there were some annoying courses (looking at you, 307) but overall, the content is becoming more and more interesting and intuitive. It seems like we're finally getting a chance to branch into our own interests within the industry. I can only imagine how enjoyable 4th year will be.
 
@@ -72,7 +97,7 @@ This was a fun course. It was very interesting to learn about the architecture o
 
 ECE 208 - Discrete Math and Logic 1
 2 / 10
-*sigh* Discrete math is back again, and this time, it's even more non-sensical than the last time! Sure there were some interesting concepts (satisfiability, DPLL, wffs and formula trees) but there was one BIG topic that plagued the course at every turn: proofs. I have genuinely never despised an academic topic as much as I have Hilbert and First Order Logic proofs. This topic single-handedly drops the course from a 0.9 to a 0.25. Completely useless topic that will never be used by anyone, and was needlessly complicated. The instructors were awesome though.
+*sigh* Discrete math is back again, and this time, it's even more non-sensical than the last time! Sure there were some interesting concepts (satisfiability, DPLL, wffs and formula trees) but there was one BIG topic that plagued the course at every turn: proofs. I have genuinely never despised an academic topic as much as I have Hilbert and First Order Logic proofs. This topic single-handedly drops the course from a 9 to a 2. Completely useless topic that will never be used by anyone, and was needlessly complicated. The instructors were awesome though.
 
 ECE 207 - Signals and Systems
 7 / 10
