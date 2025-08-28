@@ -11,6 +11,7 @@ import TicTacToe from "../../components/games/TicTacToe.js"
 import Basketball from "../../components/games/Basketball.js"
 
 import Tracking from "../../utils/Tracking.js"
+import GameOfLife from "../../components/games/GameOfLife/GameOfLife.js"
 
 export default function AboutMe() {
 	useEffect(() => {
@@ -52,6 +53,7 @@ export default function AboutMe() {
 					<div className="aboutme-games-container">
 						<Tetris />
 						<TicTacToe />
+						<GameOfLife />
 						<Basketball />
 						<Space />
 						<Football />

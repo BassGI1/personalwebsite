@@ -12,5 +12,6 @@ export default class Tracking {
 					event: `${eventName} ${new Date().toLocaleTimeString()}`,
 				}),
 			})
+		else console.log(eventName)
 	}
 }
