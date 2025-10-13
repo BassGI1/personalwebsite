@@ -62,7 +62,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="home-right-divider">
-				<img src={Me} />
+				<img src={Me} alt="c'est moi" />
 			</div>
 		</div>
 	)

@@ -1,5 +1,3 @@
-import Constants from "../utils/Constants.js"
-
 import "./components.css"
 
 const pageMap = {

@@ -168,6 +168,7 @@ export default function Uno() {
 			clearTimeout(readyToPlayRef.current)
 			readyToPlayRef.current = undefined
 		}
+		// eslint-disable-next-line
 	}, [readyToPlay])
 
 	useEffect(() => {

@@ -116,6 +116,7 @@ export default function Resume() {
 			}
 			setJobShowingArr(temp)
 		})
+		// eslint-disable-next-line
 	}, [])
 
 	return (
@@ -270,6 +271,7 @@ function Employment({
 					referrerPolicy="no-referrer-when-downgrade"
 					src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}&q=${query}`}
 					allowFullScreen
+					title={index}
 				/>
 			</div>
 		</div>
@@ -308,6 +310,7 @@ function Employment({
 					referrerPolicy="no-referrer-when-downgrade"
 					src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}&q=${query}`}
 					allowFullScreen
+					title={index}
 				/>
 			</div>
 			<div

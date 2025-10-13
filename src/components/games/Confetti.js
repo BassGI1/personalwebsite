@@ -10,6 +10,7 @@ const Confet = ({ colour, id, width, height, left, speed, containerHeight, onAni
 				Math.random() * 5 + 5
 			}turn)`
 		}, Math.random() * 900 + 100)
+		// eslint-disable-next-line
 	}, [])
 
 	return (
@@ -97,6 +98,7 @@ export default function Confetti({
 			])
 		}
 		setConfettiArray(tempArr)
+		// eslint-disable-next-line
 	}, [])
 
 	return confettiArray.map((c) => c[0])

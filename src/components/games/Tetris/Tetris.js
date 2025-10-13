@@ -19,6 +19,7 @@ const TopBar = ({ currentScore }) => {
 			setHighScore(currentScore)
 			LocalStorage.setValue(TetrisConstants.HIGH_SCORE_KEY, currentScore)
 		}
+		// eslint-disable-next-line
 	}, [currentScore])
 
 	return (
@@ -242,6 +243,7 @@ export default function Tetris() {
 			}
 			setGrid(g)
 		}
+		// eslint-disable-next-line
 	}, [difficulty])
 
 	useEffect(() => {
@@ -263,10 +265,12 @@ export default function Tetris() {
 				})
 			}, gameDifficultyValsRef.current[1])
 		}
+		// eslint-disable-next-line
 	}, [difficulty, gameDifficultyValsRef.current])
 
 	useEffect(() => {
 		if (difficulty) render()
+		// eslint-disable-next-line
 	}, [currentPiece])
 	useEffect(() => (gridRef.current = grid), [grid])
 	useEffect(() => (currentPieceRef.current = currentPiece), [currentPiece])

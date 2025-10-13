@@ -191,12 +191,13 @@ export default function Basketball() {
 					/>
 				))}
 			</div>
-			<img src={Basket} className="basketball-basket" />
+			<img src={Basket} className="basketball-basket" alt="basket" />
 			<img
 				src={Ball}
 				className={`basketball-basketball ${shotClass}`}
 				onMouseDown={onShootPressIn}
 				onMouseUp={onShootPressOut}
+				alt="ball"
 			/>
 			{showInfo && (
 				<h3 className="basketball-info-text">Click and hold the ball to shoot</h3>

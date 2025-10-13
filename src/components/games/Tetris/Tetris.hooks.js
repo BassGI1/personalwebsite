@@ -16,9 +16,12 @@ export const useKeyboardInputHandler = ({ onLeftPress, onRightPress, onUpPress, 
 					case "ArrowUp":
 						onUpPress(e)
 						break
+					default:
+						break
 				}
 			}
 		})
+		// eslint-disable-next-line
 	}, [])
 }
 

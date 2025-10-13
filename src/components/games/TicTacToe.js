@@ -193,6 +193,7 @@ export default function TicTacToe() {
 			Tracking.addEvent("Tic-Tac-Toe Drawn")
 			setWin("It's a Draw!")
 		}
+		// eslint-disable-next-line
 	}, [winLine, availableMoves.length])
 
 	const playAgain = () => {

@@ -22,6 +22,7 @@ export default function Background() {
 			})
 		}
 		setObjects(x)
+		// eslint-disable-next-line
 	}, [])
 
 	useEffect(() => {
@@ -41,16 +42,12 @@ export default function Background() {
 					point.left =
 						(100 *
 							((point.left * window.innerWidth) / 100 +
-								((point.left * window.innerWidth) /
-									100 -
-									e.clientX))) /
+								((point.left * window.innerWidth) / 100 - e.clientX))) /
 						window.innerWidth
 					point.top =
 						(100 *
 							((point.top * window.innerHeight) / 100 +
-								((point.top * window.innerHeight) /
-									100 -
-									e.clientY))) /
+								((point.top * window.innerHeight) / 100 - e.clientY))) /
 						window.innerHeight
 					if (point.left < 1) point.left = 1
 					else if (point.left > 99) point.left = 99
@@ -90,7 +87,7 @@ const RandomObject = ({ left, top, width, opacity }) => {
 				height: `${width}rem`,
 				opacity: opacity,
 				backgroundColor: Constants.theme.starColour,
-				transition: "all 0.1s"
+				transition: "all 0.1s",
 			}}
 		></div>
 	)

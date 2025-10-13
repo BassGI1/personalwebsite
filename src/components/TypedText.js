@@ -18,13 +18,11 @@ export default function TypedText({
 		const timers = new Array(text.length).fill(0)
 		for (let i = 0; i < timers.length; ++i)
 			timers[i] =
-				Math.floor(Math.random() * timeRange + minTime) +
-				(i !== 0 ? timers[i - 1] : 0)
+				Math.floor(Math.random() * timeRange + minTime) + (i !== 0 ? timers[i - 1] : 0)
 
 		for (const time of timers) {
 			setTimeout(() => {
-				textRef.current =
-					text.slice(0, textRef.current.length) + "_"
+				textRef.current = text.slice(0, textRef.current.length) + "_"
 				setCurrentText(textRef.current)
 			}, time)
 		}
@@ -34,6 +32,7 @@ export default function TypedText({
 			setCurrentText(text)
 			setDone(true)
 		}, timers[timers.length - 1] + Math.floor(Math.random() * timeRange + minTime))
+		// eslint-disable-next-line
 	}, [])
 
 	return (

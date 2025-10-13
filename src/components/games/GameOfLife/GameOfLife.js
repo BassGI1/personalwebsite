@@ -49,6 +49,7 @@ export default function GameOfLife() {
 				}
 				setGrid(newGrid)
 			}, GameOfLifeConstants.GAMELOOP_DURATION)
+		// eslint-disable-next-line
 	}, [paused])
 
 	return (

@@ -48,6 +48,8 @@ export class Piece {
 					new Block(3, 1, colour, true),
 				]
 				break
+			default:
+				break
 		}
 	}
 
@@ -143,6 +145,8 @@ export class Piece {
 						newPiece.blocks[3].y + 1
 					)
 				}
+				break
+			default:
 				break
 		}
 
