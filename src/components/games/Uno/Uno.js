@@ -64,10 +64,10 @@ export default function Uno() {
 		setEventTracked(false)
 		setReadyToPlay(true)
 		setHands([
-			new HandClass(0, 3),
-			new HandClass(1, 3),
-			new HandClass(2, 3),
-			new HandClass(3, 3),
+			new HandClass(0, UnoConstants.numStarters),
+			new HandClass(1, UnoConstants.numStarters),
+			new HandClass(2, UnoConstants.numStarters),
+			new HandClass(3, UnoConstants.numStarters),
 		])
 	}
 
@@ -186,7 +186,7 @@ export default function Uno() {
 		if (hands) {
 			for (let i = 0; i < hands.length; ++i) {
 				if (hands[i].cards.length === 0) {
-					setRenderGameSummary(currentPlayer)
+					setRenderGameSummary(i)
 					clearTimeout(readyToPlayRef.current)
 					setRenderChangeColour(false)
 					setReadyToPlay(false)
