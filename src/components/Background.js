@@ -59,6 +59,7 @@ export default function Background() {
 		})
 
 		return window.removeEventListener("mousemove", () => {})
+		// eslint-disable-next-line
 	}, [objects.length])
 
 	return (

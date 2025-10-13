@@ -64,10 +64,10 @@ export default function Uno() {
 		setEventTracked(false)
 		setReadyToPlay(true)
 		setHands([
-			new HandClass(0, UnoConstants.numStarters),
-			new HandClass(1, UnoConstants.numStarters),
-			new HandClass(2, UnoConstants.numStarters),
-			new HandClass(3, UnoConstants.numStarters),
+			new HandClass(0, 3),
+			new HandClass(1, 3),
+			new HandClass(2, 3),
+			new HandClass(3, 3),
 		])
 	}
 
@@ -83,12 +83,6 @@ export default function Uno() {
 		setReadyToPlay(false)
 		setCurrentCard(card)
 		setEventTracked(true)
-
-		if (hands[currentPlayer].cards.length === 1) {
-			setRenderGameSummary(currentPlayer)
-			setTimeout(initGame, 5000)
-			return
-		}
 
 		if (
 			currentPlayer === UnoConstants.playerIndex &&
@@ -187,6 +181,22 @@ export default function Uno() {
 		setCurrentPlayer(getNextPlayer(currentPlayer, currentDirection))
 		setRenderChangeColour(false)
 	}
+
+	useEffect(() => {
+		if (hands) {
+			for (let i = 0; i < hands.length; ++i) {
+				if (hands[i].cards.length === 0) {
+					setRenderGameSummary(currentPlayer)
+					clearTimeout(readyToPlayRef.current)
+					setRenderChangeColour(false)
+					setReadyToPlay(false)
+					setTimeout(initGame, 5000)
+					break
+				}
+			}
+		}
+		// eslint-disable-next-line
+	}, [hands])
 
 	return (
 		<div className="uno-background">
