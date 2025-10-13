@@ -1,0 +1,114 @@
+.uno-card {
+	background-color: transparent;
+	perspective: 20rem;
+	border-radius: 0.5rem;
+	overflow: visible;
+}
+
+.uno-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	overflow: visible;
+	border-radius: 0.5rem;
+}
+
+.uno-card-flipped .uno-card-inner {
+	transform: rotateY(180deg);
+}
+
+.uno-card-front,
+.uno-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 0.5rem;
+}
+
+.uno-card-front {
+	background-color: #bbb;
+	color: black;
+}
+
+.uno-card-back {
+	transform: rotateY(180deg);
+}
+
+.uno-card-face-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.uno-card-circle {
+	border-radius: 100rem;
+	transform: rotate3d(-1.5, 1, 0, 60deg) scale(1.4);
+}
+
+.uno-card-small-icon {
+	height: 25px;
+	width: 25px;
+	position: absolute;
+}
+
+.uno-card-icon-top-left {
+	left: 3px;
+	top: 3px;
+}
+
+.uno-card-icon-bottom-right {
+	right: 3px;
+	bottom: 3px;
+}
+
+.uno-card-large-icon {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 25px;
+	top: 37px;
+}
+
+.uno-card-back-wrapper {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	padding: 5px;
+}
+
+.uno-card-back-container {
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	background-color: black;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.4rem;
+}
+
+.uno-card-playable {
+	cursor: pointer;
+	animation: uno-playable-card 1s infinite alternate-reverse ease-in;
+}
+
+.uno-card-playable:hover{
+	scale: 1.1;
+}
+
+@keyframes uno-playable-card {
+	0% {
+		transform: translateY(-30px);
+	}
+	100% {
+		transform: translateY(-25px);
+	}
+}

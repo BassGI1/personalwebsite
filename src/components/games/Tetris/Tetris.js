@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react"
 
-import TetrisBlocks from "./TetrisBlocks"
-import TetrisConstants from "./TetrisConstants"
-import { Block, Piece } from "./TetrisClasses"
+import GridBlock from "./GridBlock"
+import TetrisConstants from "./Tetris.constants"
+import { Block, Piece } from "./Tetris.class"
 
 import Random from "../../../utils/Random"
 import LocalStorage from "../../../utils/Storage"
-import { useGameOver, useKeyboardInputHandler } from "./TetrisHooks"
+import { useGameOver, useKeyboardInputHandler } from "./Tetris.hooks"
 import Tracking from "../../../utils/Tracking"
 
 const TopBar = ({ currentScore }) => {
@@ -32,7 +32,7 @@ const GameGrid = ({ grid }) => {
 	return (
 		<div className="tetris-game-grid">
 			{grid?.map((g, i) => (
-				<TetrisBlocks.Block colour={g.colour} key={i} />
+				<GridBlock colour={g.colour} key={i} />
 			))}
 		</div>
 	)

@@ -1,0 +1,74 @@
+.uno-change-colour-container {
+	width: 7rem;
+	height: 7rem;
+	position: absolute;
+	top: 6.5rem;
+	left: 3rem;
+	border-radius: 200rem;
+}
+
+.uno-change-colour-colours-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.uno-change-colour-colour-red {
+	height: 50%;
+	width: 50%;
+	left: 0;
+	top: 0;
+	background-color: #ff0000;
+	position: absolute;
+	transition: background-color 200ms forwards ease-in;
+	cursor: pointer;
+}
+
+.uno-change-colour-colour-red:hover {
+	background-color: #ff6161;
+}
+
+.uno-change-colour-colour-yellow {
+	height: 50%;
+	width: 50%;
+	top: 0;
+	right: 0;
+	background-color: #f4f485;
+	position: absolute;
+	transition: background-color 200ms forwards ease-in;
+	cursor: pointer;
+}
+
+.uno-change-colour-colour-yellow:hover {
+	background-color: #ffff51;
+}
+
+.uno-change-colour-colour-green {
+	height: 50%;
+	width: 50%;
+	left: 0;
+	bottom: 0;
+	background-color: #6aa84f;
+	position: absolute;
+	transition: background-color 200ms forwards ease-in;
+	cursor: pointer;
+}
+
+.uno-change-colour-colour-green:hover {
+	background-color: #86ea5c;
+}
+
+.uno-change-colour-colour-blue {
+	height: 50%;
+	width: 50%;
+	right: 0;
+	bottom: 0;
+	background-color: #4a86e8;
+	position: absolute;
+	transition: background-color 200ms forwards ease-in;
+	cursor: pointer;
+}
+
+.uno-change-colour-colour-blue:hover {
+	background-color: #66a1ff;
+}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import TetrisConstants from "./TetrisConstants"
+import TetrisConstants from "./Tetris.constants"
 
 export const useKeyboardInputHandler = ({ onLeftPress, onRightPress, onUpPress, active }) => {
 	useEffect(() => {

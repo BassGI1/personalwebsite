@@ -21,4 +21,14 @@ export default class Random {
 	static choice(options) {
 		return options[Math.floor(Math.random() * options.length)]
 	}
+
+	static weightedChoice(options, weights) {
+		const weightedArray = []
+		for (let i = 0; i < options.length; ++i) {
+			for (let _ = 0; _ < weights[i]; ++_) {
+				weightedArray.push(options[i])
+			}
+		}
+		return Random.choice(weightedArray)
+	}
 }

@@ -12,6 +12,7 @@ import Basketball from "../../components/games/Basketball.js"
 
 import Tracking from "../../utils/Tracking.js"
 import GameOfLife from "../../components/games/GameOfLife/GameOfLife.js"
+import Uno from "../../components/games/Uno/Uno.js"
 
 export default function AboutMe() {
 	useEffect(() => {
@@ -51,6 +52,7 @@ export default function AboutMe() {
 
 				<div className="aboutme-games-scroll">
 					<div className="aboutme-games-container">
+						<Uno />
 						<Tetris />
 						<TicTacToe />
 						<GameOfLife />

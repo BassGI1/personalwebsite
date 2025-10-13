@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 
-import GameOfLifeConstants from "./GameOfLifeConstants"
-import { countLivingNeighbours, createGrid } from "./GameOfLifeFunctions"
+import GameOfLifeConstants from "./GameOfLife.constants"
+import { countLivingNeighbours, createGrid } from "./GameOfLife.functions"
 
 import Play from "../../../assets/gameoflife/Play.png"
 import Pause from "../../../assets/gameoflife/Pause.png"

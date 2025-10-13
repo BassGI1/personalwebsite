@@ -1,5 +1,5 @@
-import { Cell } from "./GameOfLifeClasses"
-import GameOfLifeConstants from "./GameOfLifeConstants"
+import { Cell } from "./GameOfLife.class"
+import GameOfLifeConstants from "./GameOfLife.constants"
 
 export const createGrid = () => {
 	const g = []
