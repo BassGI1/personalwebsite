@@ -8,6 +8,23 @@ const ResumeData = [
 		"Babylist",
 		Babylist,
 		"Software Engineer",
+		"September 2025",
+		"December 2025",
+		"Emeryville, California, United States",
+		"Emeryville,California,United+States",
+		[
+			"Built the easy add to cart feature, increasing click-to-order conversion rate by >10% and driving >$1,000,000 in annual revenue.",
+			"Built the Multi Record Your Purchase feature, driving >200,000 annual reservations.",
+			"Built the Product Details feature, increasing order conversion rate by >5%.",
+			"Owned projects from technical design to implementation and experimentation (A/B, etc) and collaborated with all stakeholders (product, design, etc).",
+			"Refactored and optimized multiple Sidekiq jobs, leading to a reduction in runtime and retries by >20% and >50%.",
+			"Implemented event tracking for all projects worked on.",
+		],
+	],
+	[
+		"Babylist",
+		Babylist,
+		"Software Engineer",
 		"January 2025",
 		"April 2025",
 		"Emeryville, California, United States",
@@ -17,7 +34,7 @@ const ResumeData = [
 			"Built several affiliate partner integrations, increasing revenue by >$1,000,000 annually.",
 			"Optimized registries endpoint to decrease latency across all registry visits by >15%.",
 			"Created a Sidekiq worker that automatically matches order numbers to registrant purchases, which results in >60% of incorrect user entries being corrected.",
-			"Built the 'add a shower' feature which allowed users to organize their baby showers, driving >10,000 registry visits per week."
+			"Built the 'add a shower' feature which allowed users to organize their baby showers, driving >10,000 registry visits per week.",
 		],
 	],
 	[
@@ -79,9 +96,9 @@ const ResumeData = [
 		[
 			"Used the Yelp API to implement the backend REST API’s of the LetsGo App.",
 			"Developed and maintained new features of pexhouse.com website using Node.js and React.",
-			"Developed several pages of LetsGo Dining mobile application using React Native."
-		]
-	]
+			"Developed several pages of LetsGo Dining mobile application using React Native.",
+		],
+	],
 ]
 
 export default ResumeData

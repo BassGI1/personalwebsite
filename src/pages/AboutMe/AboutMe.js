@@ -39,7 +39,7 @@ export default function AboutMe() {
 					minTime={10}
 				/>
 				<TypedText
-					text="I have completed 5 internships with a focus on full stack software engineering. I've built systems of all types of all levels; from a RISC-V processor to this website, I've been exposed to all kinds of software development. When I'm not writing code, you'll probably find me on a court or a field somewhere, playing a sport or stargazing."
+					text="I have completed 6 internships with a focus on full stack software engineering. I've built systems of all types of all levels; from a RISC-V processor to this website, I've been exposed to all kinds of software development. When I'm not writing code, you'll probably find me on a court or a field somewhere, playing a sport or stargazing."
 					color="white"
 					timeRange={10}
 					minTime={5}

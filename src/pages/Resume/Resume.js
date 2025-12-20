@@ -31,6 +31,7 @@ import MySQL from "../../assets/technologies/languages/MySQL.png"
 
 // frameworks
 import Django from "../../assets/technologies/frameworks/Django.png"
+import Next from "../../assets/technologies/frameworks/Next.png"
 import Node from "../../assets/technologies/frameworks/Node.png"
 import Phoenix from "../../assets/technologies/frameworks/Phoenix.png"
 import ReactNative from "../../assets/technologies/frameworks/React Native.png"
@@ -47,6 +48,9 @@ import Docker from "../../assets/technologies/tools/Docker.png"
 import GCP from "../../assets/technologies/tools/GCP.png"
 import Git from "../../assets/technologies/tools/Git.png"
 import Linux from "../../assets/technologies/tools/Linux.png"
+import LaunchDarkly from "../../assets/technologies/tools/LaunchDarkly.png"
+import Figma from "../../assets/technologies/tools/Figma.png"
+
 import Tracking from "../../utils/Tracking.js"
 
 const languages = [
@@ -70,6 +74,7 @@ const frameworks = [
 	[ReactLogo, "React"],
 	[Node, "Node"],
 	[Rails, "Ruby On Rails"],
+	[Next, "Next.js"],
 	[Django, "Django"],
 	[ReactNative, "React Native"],
 	[Vue, "Vue"],
@@ -85,6 +90,8 @@ const tools = [
 	[Docker, "Docker"],
 	[Git, "Git"],
 	[Datadog, "Datadog"],
+	[Figma, "Figma"],
+	[LaunchDarkly, "Launch Darkly"],
 ]
 
 export default function Resume() {
@@ -336,6 +343,4 @@ function Employment({
 	)
 }
 
-const Line = () => {
-	return <div className="resume-employment-dropping-line"></div>
-}
+const Line = () => <div className="resume-employment-dropping-line" />
