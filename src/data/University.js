@@ -1,4 +1,29 @@
-const University = `4A
+const University = `4B
+
+Since I had taken a bunch of technical courses earlier in my degree, I was forced to take some non-technical electives to satisfy my graduation requirements. This term ended up being a waste of time.
+
+ECE 498B - Engineering Design Project - 2
+8 / 10
+The second half of our capstone project. This term's course was a lot less stressful, but a lot more non-technical. This was due to all the safety checks and presentations we had to do. The symposium was surprisingly fun! I really enjoyed showing off the culmination of a year's worth of work, and it seemed like our project was well received by everyone who looked at it.
+
+ECE 406 - Algorithm Design and Analysis
+8 / 10
+I expected this course to be leetcode 2.0, but that wasn't the case. There was a lot of underlying theory that I hadn't seen before, so the course ended up being pretty interesting.
+
+MSE 331 - Introduction to Optimization
+7 / 10
+My non-ECE technical elective. I was forced to take this course, and it was pretty uninteresting. The concepts were interesting but the manner in which the course was taught was not to my liking. Overall, not the worst course ever though.
+
+HIST 268 - A Global History of Empires
+7 / 10
+This course made me write 6 essays. Before this course, I hadn't written an essay in 5(?) years. I love history though, so I enjoyed this course overall. I wish we the content had delved more into Caliphate history instead of focussing so much on western(?) history.
+
+HEALTH 100 - Healthy Lifestyles and Habits
+5 / 10
+Just a bird course that I needed to take to graduate.
+
+
+4A
 
 Continuing the trend of content becoming more and more interesting, this term was a lot of fun! I decided to take an AI course because I thought it would be a good idea to get a foundational understanding of AI, and it more or less sparked something in me. I'm considering doing a masters in AI if possible.
 
