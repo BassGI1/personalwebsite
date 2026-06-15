@@ -36,7 +36,7 @@ ECE 458 - Computer Security
 I thought this course would have been a lot more technical than it actually ended up being. A lot of the content was discussing human vulnerability moreso than code vulnerabilities. It was still interesting though.
 
 ECE 457B - Foundations of Computational Intelligence
-10 / 10
+9 / 10
 This course opened my eyes to the size of the giants whose shoulders we are fortunate enough to stand upon. Calling a simple '.fit_transform' function on a model in tensorflow hides the black magic (math) going on in the background of the function call. Taking this course really gave me a deeper appreciation for math as a whole. I still think Neural Networks are magic though.
 
 ECE 454 - Distributed Computing

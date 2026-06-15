@@ -4,15 +4,16 @@ import "./AboutMe.css"
 
 import TypedText from "../../components/TypedText.js"
 
+import Uno from "../../components/games/Uno/Uno.js"
 import Space from "../../components/games/Space.js"
-import Tetris from "../../components/games/Tetris/Tetris.js"
 import Football from "../../components/games/Football.js"
 import TicTacToe from "../../components/games/TicTacToe.js"
+import Tetris from "../../components/games/Tetris/Tetris.js"
 import Basketball from "../../components/games/Basketball.js"
+import Breakout from "../../components/games/Breakout/Breakout.js"
+import GameOfLife from "../../components/games/GameOfLife/GameOfLife.js"
 
 import Tracking from "../../utils/Tracking.js"
-import GameOfLife from "../../components/games/GameOfLife/GameOfLife.js"
-import Uno from "../../components/games/Uno/Uno.js"
 
 export default function AboutMe() {
 	useEffect(() => {
@@ -53,6 +54,7 @@ export default function AboutMe() {
 				<div className="aboutme-games-scroll">
 					<div className="aboutme-games-container">
 						<Uno />
+						<Breakout />
 						<Tetris />
 						<TicTacToe />
 						<GameOfLife />
